@@ -1,17 +1,8 @@
 .tekst {
   color: white;
 }
-.mail {
+.grey {
   color: rgba(117, 117, 117, 1);
-}
-.phone {
-  color: rgba(117, 117, 117, 1);
-}
-.blue {
-  color: rgba(33, 150, 243, 1);
-}
-.adress {
-  color: rgba(255, 255, 255, 0.6);
 }
 p {
   color: rgba(117, 117, 117, 1);
@@ -21,5 +12,18 @@ p {
 }
 .social-link:hover,
 .social-link:focus {
+  color: rgba(33, 150, 243, 1);
+}
+.link {
+  color: rgba(33, 33, 33, 1);
+}
+.link:hover {
+  background-color: blue;
+  color: white;
+}
+.link-black {
+  color: black;
+}
+.link-black:hover {
   color: rgba(33, 150, 243, 1);
 }
