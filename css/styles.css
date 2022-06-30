@@ -7,7 +7,7 @@
 .phone {
   color: rgba(117, 117, 117, 1);
 }
-.link {
+.blue {
   color: rgba(33, 150, 243, 1);
 }
 .adress {
@@ -15,4 +15,11 @@
 }
 p {
   color: rgba(117, 117, 117, 1);
+}
+.social-link {
+  color: rgba(117, 117, 117, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  color: rgba(33, 150, 243, 1);
 }
