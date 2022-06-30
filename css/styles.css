@@ -1,4 +1,15 @@
 .tekst {
-  color: white
-  background-color:black;
+  color: white;
+}
+.mail {
+  color: rgba(117, 117, 117, 1);
+}
+.phone {
+  color: rgba(117, 117, 117, 1);
+}
+.link {
+  color: rgba(33, 150, 243, 1);
+}
+.adress {
+  color: rgba(255, 255, 255, 0.6);
 }
