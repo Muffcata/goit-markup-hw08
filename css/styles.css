@@ -27,3 +27,16 @@ p {
 .link-black:hover {
   color: rgba(33, 150, 243, 1);
 }
+
+body {
+  font-family: "Roboto";
+}
+.title {
+  font-family: "Raleway"
+ 
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px
+
+}
