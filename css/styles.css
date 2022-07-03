@@ -1,3 +1,46 @@
+body {
+  font-family: "Roboto";
+  color: rgba(33, 33, 33, 1);
+}
+h5 {
+  font-family: "Raleway";
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+.line-heigh {
+  font-heigh: 1, 5;
+}
+
+a {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h1 {
+  font-weight: 900;
+}
+p {
+  color: #757575;
+  letter-spacing: 0, 03em;
+  font-size: 16px;
+  line-height: 1, 5;
+  font-weight: 400;
+}
+div {
+  font-weight: 700;
+  font-size: 16px;
+}
+div1 {
+  font-weight: 500;
+  font-size: 16px;
+}
 .tekst {
   color: white;
 }
@@ -15,16 +58,16 @@
   color: rgba(33, 150, 243, 1);
 }
 .link {
-  color: rgba(33, 33, 33, 1)
-  ;
+  color: rgba(33, 33, 33, 1);
   text-decoration: none;
   font-weight: 700;
-  cursor:pointer}
+  cursor: pointer;
+  font-weight: 16px;
+}
 
 .link:hover {
   background-color: blue;
   color: white;
-
 }
 .link-black {
   color: black;
@@ -32,40 +75,4 @@
 }
 .link-black:hover {
   color: rgba(33, 150, 243, 1);
-}
-
-body {
-  font-family: "Roboto";
-  color:
-  rgba(33, 33, 33, 1)
-}
-h5 {
-  font-family: "Raleway"
-
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px
-
-}
-.line-heigh {
-    font-heigh: 1,5;
-}
-
-a{ font-weight: 500;}
-
-h2 {
-    font-weight: 700;
-}
-
-h1{
-    font-weight: 900;
-}
-p{
-    
-    color:#757575;
-    letter-spacing: 0,03em;
-    font-size: 14px;
-line-height: 24px;
-    font-weight: 400;
 }
