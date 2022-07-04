@@ -1,7 +1,6 @@
 body {
   font-family: "Roboto";
   color: rgba(33, 33, 33, 1);
-  list-style: none;
 }
 h5 {
   font-family: "Raleway";
@@ -17,7 +16,6 @@ h5 {
 a {
   font-weight: 500;
   font-size: 14px;
-  list-style: none;
 }
 
 h2 {
@@ -80,4 +78,7 @@ div1 {
 }
 .light {
   color: blue;
+}
+ul {
+  list-style: none;
 }
