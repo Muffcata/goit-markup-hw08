@@ -2,47 +2,31 @@ body {
   font-family: "Roboto";
   color: rgba(33, 33, 33, 1);
 }
-h5 {
-  font-family: "Raleway";
 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-}
 .line-heigh {
   font-heigh: 1, 5;
 }
 
-a {
-  font-weight: 500;
-  font-size: 14px;
-}
-
-h2 {
+.subtitle {
   font-weight: 700;
   font-size: 36px;
 }
 
-h1 {
-  font-weight: 900;
-}
-p {
+.caption {
   color: #757575;
-  letter-spacing: 0, 03em;
-  font-size: 16px;
-  line-height: 1, 5;
   font-weight: 400;
 }
-div {
+.title {
   font-weight: 700;
   font-size: 16px;
 }
-div1 {
+.name {
   font-weight: 500;
   font-size: 16px;
 }
 .text {
   color: white;
+  font-weight: 900;
 }
 .grey {
   color: rgba(117, 117, 117, 1);
@@ -52,6 +36,7 @@ div1 {
   color: rgba(117, 117, 117, 1);
   text-decoration: none;
   font-weight: 500;
+  font-size: 14px;
 }
 .social-link:hover,
 .social-link:focus {
@@ -72,13 +57,29 @@ div1 {
 .link-black {
   color: black;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
 }
 .link-black:hover {
   color: rgba(33, 150, 243, 1);
 }
 .light {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
   color: rgba(33, 150, 243, 1);
 }
+
+.logo: {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
 ul {
   list-style: none;
   display: inline;
