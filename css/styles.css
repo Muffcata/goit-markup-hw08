@@ -1,6 +1,11 @@
 :root {
   --brand-color: rgba(33, 33, 33, 1);
+  --light-color: rgba(33, 150, 243, 1);
+  --subtitle-color: rgba(117, 117, 117, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --background-color: rgba(47, 48, 58, 1);
 }
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   line-height: 1.5;
@@ -12,7 +17,7 @@ body {
 }
 
 .caption {
-  color: #757575;
+  color: var(--subtitle-color);
   font-weight: 400;
   line-height: 1, 5;
 }
@@ -25,25 +30,22 @@ body {
   font-size: 16px;
 }
 .text {
-  color: rgba(255, 255, 255, 1);
+  color: var(--white-color);
   font-weight: 900;
-}
-.grey {
-  color: rgba(117, 117, 117, 1);
 }
 
 .social-link {
-  color: rgba(117, 117, 117, 1);
+  color: var(--subtitle-color)
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
 }
 .social-link:hover,
 .social-link:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--light-color);
 }
 .link {
-  color: rgba(33, 33, 33, 1);
+  color: var(--brand-color);
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
@@ -51,8 +53,8 @@ body {
 }
 
 .link:hover {
-  background-color: rgba(33, 150, 243, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--light-color);
+  color: var(--white-color);
 }
 .link-black {
   color: rgba(33, 33, 33, 1);
@@ -61,7 +63,7 @@ body {
   font-size: 14px;
 }
 .link-black:hover {
-  color: rgba(33, 150, 243, 1);
+  color: var(--light-color);
 }
 .light {
   font-family: "Raleway", sans-serif;
@@ -69,7 +71,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: rgba(33, 150, 243, 1);
+  color: var(--light-color);
 }
 .light-black {
   font-family: "Raleway", sans-serif;
@@ -77,7 +79,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: rgba(33, 33, 33, 1);
+  color: var(--brand-color);
 }
 
 .logo-dark {
@@ -86,7 +88,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--brand-color);
 }
 ul {
   list-style: none;
@@ -98,7 +100,7 @@ ul {
   height: 300px;
   left: 0px;
   top: 80px;
-  background-color: rgba(47, 48, 58, 1);
+  background-color:var(--background-color) ;
 }
 
 .foot {
@@ -107,5 +109,5 @@ ul {
   left: 0px;
   top: 2097px;
 
-  background: #2f303a;
+  background: var(--background-color);
 }
