@@ -5,7 +5,10 @@
   --white-color: rgba(255, 255, 255, 1);
   --background-color: rgba(47, 48, 58, 1);
 }
-
+*,
+*::after *::before {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   line-height: 1.5;
@@ -78,7 +81,6 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
   color: var(--brand-color);
 }
 
@@ -111,11 +113,24 @@ ul {
   background-color: var(--background-color);
 }
 .page-header {
+  box-sizing: border-box;
+  border: 2px;
+  width: 1600px;
+  height: 80px;
+  background-color: var(--white-color);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
-.line {
+
+.logo {
+  font-family: "Raleway";
+  padding-left: 215px;
+  padding-right: 1240px;
+}
+.center {
   display: flex;
-  justify-content: center;
+  padding-left: 93px;
+  padding-top: 16px;
+}
+.top-section {
+  padding: 969px 624px 1338px 969px;
 }
