@@ -12,8 +12,10 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
   color: var(--brand-color);
+  background-color: var(--white-color);
 }
 
 .subtitle {
@@ -82,6 +84,8 @@ body {
   cursor: pointer;
   font-size: 16px;
   line-height: 26px;
+  width: 77px;
+  height: 26px;
   background-color: var(--light-color);
   color: var(--white-color);
   border-style: none;
@@ -152,11 +156,43 @@ body {
   width: 145px;
   height: 31px;
 }
-.no-active {
+.no-active-one {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  width: 49px;
+  height: 26px;
+  background-color: var(--background-color-button);
+  border-style: none;
+}
+.no-active-two {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  width: 70px;
+  height: 26px;
+  background-color: var(--background-color-button);
+  border-style: none;
+}
+.no-active-three {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  width: 47px;
+  height: 26px;
+  background-color: var(--background-color-button);
+  border-style: none;
+}
+.no-active-four {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  width: 77px;
+  height: 26px;
   background-color: var(--background-color-button);
   border-style: none;
 }
@@ -221,7 +257,6 @@ ul {
   padding-right: 1240px;
 }
 .center {
-  display: flex;
   padding-left: 93px;
   padding-top: 16px;
 }
