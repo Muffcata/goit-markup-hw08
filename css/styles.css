@@ -64,6 +64,7 @@ body {
   width: 135px;
   height: 16px;
   color: var(--light-color);
+  cursor: pointer;
 }
 .social-link:hover,
 .social-link:focus {
@@ -127,6 +128,7 @@ body {
   font-size: 14px;
   width: 53px;
   height: 16px;
+  cursor: pointer;
   text-decoration: none;
 }
 .link-black-four {
@@ -211,7 +213,11 @@ body {
   border-radius: 4px;
   width: 117px;
   height: 30px;
+  border-style: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .light-black {
   font-family: "Raleway", sans-serif;
