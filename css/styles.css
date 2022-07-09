@@ -22,12 +22,16 @@ body {
   font-size: 36px;
   width: 352px;
   height: 42px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .subtitle-two {
   font-weight: 700;
   font-size: 36px;
   width: 209px;
   height: 42px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .caption {
@@ -55,6 +59,8 @@ body {
   font-size: 44px;
   width: 696px;
   height: 120px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .social-link {
@@ -232,6 +238,8 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .light-black {
   font-family: "Raleway", sans-serif;
@@ -281,8 +289,7 @@ ul {
 .logo {
   font-family: "Raleway";
 }
-.center {
-}
+
 .text-adress {
   color: var(--white-color);
   font-family: "Roboto";
@@ -293,10 +300,14 @@ ul {
   width: 247px;
   height: 21px;
 }
-.top-section {
-}
+
 .line {
   margin-left: 510px;
-  display: block;
   display: flex;
+  padding: 8px;
+}
+.container {
+  width: 1200px;
+}
+.section {
 }
