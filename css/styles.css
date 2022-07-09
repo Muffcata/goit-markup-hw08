@@ -12,15 +12,22 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-family: "Raleway", sans-serif;
   line-height: 1.5;
   color: var(--brand-color);
   background-color: var(--white-color);
 }
 
-.subtitle {
+.subtitle-one {
   font-weight: 700;
   font-size: 36px;
+  width: 352px;
+  height: 42px;
+}
+.subtitle-two {
+  font-weight: 700;
+  font-size: 36px;
+  width: 209px;
+  height: 42px;
 }
 
 .caption {
