@@ -238,7 +238,6 @@ body {
   width: 200px;
   height: 50px;
   cursor: pointer;
-
   align-items: center;
 }
 .light-black {
@@ -263,11 +262,11 @@ ul {
 }
 
 .middle {
-  width: 1600px;
-  height: 300px;
-  left: 0px;
-  top: 80px;
   background-color: var(--background-color);
+  padding: 0px;
+  box-sizing: border-box;
+  width: 1600px;
+  height: 600px;
 }
 
 .foot {
@@ -276,14 +275,6 @@ ul {
   left: 0px;
   top: 2097px;
   background-color: var(--background-color);
-}
-.page-header {
-  box-sizing: border-box;
-  border: 2px;
-  width: 1600px;
-  height: 80px;
-  background-color: var(--white-color);
-  display: flex;
 }
 
 .logo {
@@ -310,4 +301,5 @@ ul {
   width: 1200px;
 }
 .section {
+  padding: 94px 0px 94px 0px;
 }
