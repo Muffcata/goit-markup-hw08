@@ -263,8 +263,7 @@ ul {
 
 .middle {
   background-color: var(--background-color);
-  padding: 0px;
-  box-sizing: border-box;
+
   width: 1600px;
   height: 600px;
 }
@@ -292,14 +291,12 @@ ul {
   height: 21px;
 }
 
-.line {
-  margin-left: 510px;
-  display: flex;
-  padding: 8px;
-}
 .container {
   width: 1200px;
 }
 .section {
   padding: 94px 0px 94px 0px;
+}
+.line {
+  display: flex;
 }
