@@ -112,15 +112,7 @@ body {
   background-color: var(--light-color);
   color: var(--white-color);
 }
-.link-black {
-  color: rgba(33, 33, 33, 1);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-}
-.link-black:hover {
-  color: var(--light-color);
-}
+
 .link-black-two {
   font-family: "Roboto";
   font-weight: 500;
@@ -186,6 +178,11 @@ body {
   border-radius: 4px;
   width: 93px;
   height: 38px;
+  cursor: pointer;
+}
+.no-active-one:hover {
+  background-color: var(--light-color);
+  color: var(--white-color);
 }
 .no-active-two {
   font-family: "Roboto";
@@ -198,6 +195,11 @@ body {
   border-style: none;
   width: 114px;
   height: 38px;
+  cursor: pointer;
+}
+.no-active-two:hover {
+  background-color: var(--light-color);
+  color: var(--white-color);
 }
 .no-active-three {
   font-family: "Roboto";
@@ -211,6 +213,11 @@ body {
   border-radius: 4px;
   width: 91px;
   height: 38px;
+  cursor: pointer;
+}
+.no-active-three:hover {
+  background-color: var(--light-color);
+  color: var(--white-color);
 }
 .no-active-four {
   font-family: "Roboto";
@@ -224,6 +231,11 @@ body {
   border-radius: 4px;
   width: 121px;
   height: 38px;
+  cursor: pointer;
+}
+.no-active-four:hover {
+  background-color: var(--light-color);
+  color: var(--white-color);
 }
 .no-active-blue {
   font-family: "Roboto";
