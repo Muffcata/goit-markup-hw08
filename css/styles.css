@@ -193,6 +193,7 @@ body {
   height: 26px;
   background-color: var(--background-color-button);
   border-style: none;
+  border-radius: 4px;
   width: 114px;
   height: 38px;
   cursor: pointer;
