@@ -13,6 +13,8 @@
   padding: 0;
 }
 body {
+  width: 1600px;
+  height: 2349px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: var(--brand-color);
@@ -44,6 +46,15 @@ img {
   line-height: 1.5;
   width: 270px;
   height: 75px;
+  font-size: 14px;
+}
+.surname {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 270px;
+  height: 16px;
+  margin-bottom: 10px;
 }
 .title {
   font-weight: 700;
@@ -74,7 +85,7 @@ img {
   height: 16px;
   color: var(--light-color);
   cursor: pointer;
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .social-link:hover,
 .social-link:focus {
@@ -103,7 +114,7 @@ img {
   width: 135px;
   height: 16px;
 
-  padding-left: 50px;
+  margin-left: 50px;
 }
 .link {
   color: var(--brand-color);
@@ -135,7 +146,7 @@ img {
   height: 16px;
   color: var(--light-color);
   text-decoration: none;
-  padding-right: 46px;
+  margin-right: 46px;
 }
 .link-black-three {
   font-family: "Roboto";
@@ -156,7 +167,7 @@ img {
   font-weight: 500;
   width: 51px;
   height: 16px;
-  padding-right: 371px;
+  margin-right: 371px;
 }
 .link-black-five {
   font-family: "Roboto";
@@ -165,7 +176,7 @@ img {
   font-weight: 500;
   width: 58px;
   height: 16px;
-  padding-right: 46px;
+  margin-right: 46px;
 }
 .link-black-six {
   font-family: "Roboto";
@@ -174,7 +185,7 @@ img {
   font-weight: 500;
   width: 58px;
   height: 16px;
-  padding-right: 364px;
+  margin-right: 364px;
 }
 .link-black-seven {
   font-family: "Roboto";
@@ -183,7 +194,7 @@ img {
   font-weight: 500;
   width: 58px;
   height: 16px;
-  padding-right: 46px;
+  margin-right: 46px;
 }
 .light {
   font-family: "Raleway", sans-serif;
@@ -287,8 +298,6 @@ img {
   height: 50px;
 
   cursor: pointer;
-  padding-left: 42px;
-  margin-top: 10px;
 }
 .light-black {
   font-family: "Raleway", sans-serif;
@@ -365,4 +374,19 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  align-content: space-around;
+  margin-left: 215px;
+}
+.item {
+  font-weight: 400px;
+  font-size: 14px;
+  width: 270px;
+  height: 133px;
+  letter-spacing: 0.03em;
 }
