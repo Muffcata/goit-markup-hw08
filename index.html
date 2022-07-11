@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Studio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -16,8 +19,7 @@
   </head>
 
   <body>
-    <header class="main" class="container">
-
+    <header class="main container">
       <h5 class="logo">
         <span class="light">Web</span><span class="light-black">Studio</span>
       </h5>
@@ -42,23 +44,20 @@
             >+48 111 111 111</a
           >
         </li>
-      
       </ul>
-
     </header>
-  
-    <section class="middle" class="section">
-      <h1 class="text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-      <button class="no-active-blue" type="button">Zamów usługe</button>
-   
-   </section>
-    <main >
-    
-      <section class="section"class="container" >
-        
+
+    <section class="container">
+      <div class="middle">
+        <h1 class="text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button class="no-active-blue" type="button">Zamów usługę</button>
+      </div>
+    </section>
+    <main>
+      <section class="section-middle">
         <ul class="card-set">
           <li class="item">
-            <h3>LOREM IPSUM</h3>
+            <h3 class="surname">LOREM IPSUM</h3>
             <p class="caption">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -66,7 +65,7 @@
           </li>
 
           <li class="item">
-            <h3>LOREM IPSUM</h3>
+            <h3 class="surname">LOREM IPSUM</h3>
             <p class="caption">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -74,7 +73,7 @@
           </li>
 
           <li class="item">
-            <h3>LOREM IPSUM</h3>
+            <h3 class="surname">LOREM IPSUM</h3>
             <p class="caption">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -82,7 +81,7 @@
           </li>
 
           <li class="item">
-            <h3>LOREM IPSUM</h3>
+            <h3 class="surname">LOREM IPSUM</h3>
             <p class="caption">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -91,9 +90,9 @@
         </ul>
       </section>
 
-      <section class="section" class="container">
-        <h2 class="subtitle-one">Czym się zajmujemy</h2>
-        <ul>
+      <section class="work-team">
+        <h2>Czym się zajmujemy</h2>
+        <ul class="img-item">
           <li>
             <img
               src="images/image.jpg"
@@ -120,69 +119,79 @@
           </li>
         </ul>
       </section>
-      <section class="section" class="container">
-        <h2 class="subtitle-two">Nasz zespół</h2>
 
-        <ul>
-          <li>
-            <img
-              src="images/image (4).jpg"
-              alt="Pan w brązowej koszuli"
-              width="270"
-              height="260"
-            />
-            <div>
-              <li<div class="name">John Doe</div>
-              <p class="caption">Product Designer</p></li>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/image (5).jpg"
-              alt="Pani w okularach"
-              width="270"
-              height="260"
-            />
-            <div>
-              <li><div class="name">John Doe</div>
-              <p class="caption">Frontend Developer</p></li>
-            </div>
-          </li>
+      <section class="team">
+        <h2>Nasz zespół</h2>
+        <div class="container">
+          <ul class="team-images">
+            <li>
+              <figure>
+                <img
+                  src="images/image (4).jpg"
+                  alt="Pan w brązowej koszuli"
+                  width="270"
+                  height="260"
+                />
 
-          <li>
-            <img
-              src="images/image (6).jpg"
-              alt="Pan w jasnej koszuli"
-              width="270"
-              height="260"
-            />
+                <figcaption>
+                  <p class="name">John Doe</p>
+                  <p class="caption">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/image (5).jpg"
+                  alt="Pani w okularach"
+                  width="270"
+                  height="260"
+                />
+                <figcaption>
+                  <p class="name">John Doe</p>
+                  <p class="caption">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
 
-            <div>
-              <li><div class="name">John Doe</div>
+            <li>
+              <figure>
+                <img
+                  src="images/image (6).jpg"
+                  alt="Pan w jasnej koszuli"
+                  width="270"
+                  height="260"
+                />
 
-              <p class="caption">Marketing</p></li>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/image (7).jpg"
-              alt="Pan w czarnej koszulce"
-              width="270"
-              height="260"
-            />
+                <figcaption>
+                  <p class="name">John Doe</p>
 
-            <div>
-              <li><div class="name">John Doe</div>
-              <p class="caption">UI Designer</p></li>
-            </div>
-          </li>
-        </ul>
-     </section>
+                  <p class="caption">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="images/image (7).jpg"
+                  alt="Pan w czarnej koszulce"
+                  width="270"
+                  height="260"
+                />
+
+                <figcaption>
+                  <p class="name">John Doe</p>
+                  <p class="caption">UI Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <section class="section" class="container">
-      <section class="foot">
+      <section class="foot container">
         <h5 class="logo">
           <span class="light">Web</span><span class="logo-dark">Studio</span>
         </h5>
@@ -206,7 +215,6 @@
           </li>
         </ul>
       </section>
-    </section>
     </footer>
   </body>
 </html>

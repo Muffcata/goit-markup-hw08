@@ -12,34 +12,51 @@
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+}
+
+img {
+  display: block;
+}
 body {
   width: 1600px;
-  height: 2349px;
+
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: var(--brand-color);
   background-color: var(--white-color);
 }
-img {
-  display: block;
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  align-content: space-around;
+  margin-left: 215px;
 }
-.subtitle-one {
-  font-weight: 700;
-  font-size: 36px;
-  width: 352px;
-  height: 42px;
-  margin-left: 0px;
-  margin-right: 0px;
+.item {
+  font-weight: 400px;
+  font-size: 14px;
+  width: 270px;
+  height: 133px;
+  letter-spacing: 0.03em;
 }
-.subtitle-two {
-  font-weight: 700;
-  font-size: 36px;
-  width: 209px;
-  height: 42px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .caption {
   color: var(--subtitle-color);
   font-weight: 400;
@@ -47,6 +64,7 @@ img {
   width: 270px;
   height: 75px;
   font-size: 14px;
+  text-align: center;
 }
 .surname {
   font-weight: 700;
@@ -56,6 +74,10 @@ img {
   height: 16px;
   margin-bottom: 10px;
 }
+.section-middle {
+  padding-top: 94px;
+}
+/* PORTFOLIO */
 .title {
   font-weight: 700;
   font-size: 16px;
@@ -63,18 +85,100 @@ img {
   height: 36px;
 }
 .name {
+  color: var(--brand-color);
   font-weight: 500;
   font-size: 16px;
   width: 72px;
   height: 19px;
+  text-align: center;
 }
+.middle {
+  background-color: var(--background-color);
+  width: 1600px;
+  height: 600px;
+}
+/* STUDIO */
 .text {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
-  width: 696px;
-  height: 120px;
-  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+  text-transform: uppercase;
+}
+.no-active-blue {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--light-color);
+  border-radius: 4px;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 700px;
+  margin-bottom: 200px;
+  cursor: pointer;
+}
+
+.work-team h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+
+.subtitle-one {
+  font-weight: 700;
+  font-size: 36px;
+
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+.team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.team-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+  width: 270px;
+  height: 368px;
+}
+.team-images li figure {
+  box-shadow: 0 2px 1px 0 #000000;
+  box-shadow: 0 1px 1px 0 #000000;
+  box-shadow: 0 1px 3px 0 #000000;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-image-width: 270px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-image-width: 270px;
+}
+.img-item {
+  display: flex;
+  gap: 30px;
+  margin-left: 215px;
+  padding-top: 50px;
+}
+.team {
+  width: 1600px;
+  height: 648px;
+  background-color: var(--background-color-button);
+  padding-top: 94px;
 }
 
 .social-link {
@@ -283,22 +387,7 @@ img {
   background-color: var(--light-color);
   color: var(--white-color);
 }
-.no-active-blue {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  width: 117px;
-  height: 30px;
-  text-align: center;
-  color: var(--white-color);
-  background-color: var(--light-color);
-  border-radius: 4px;
-  border-style: none;
-  width: 200px;
-  height: 50px;
 
-  cursor: pointer;
-}
 .light-black {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -318,18 +407,8 @@ img {
 ul {
   list-style: none;
 }
-.middle {
-  background-color: var(--background-color);
-  box-sizing: border-box;
-  width: 1600px;
-  height: 600px;
-  text-align: center;
-  padding: 452px;
-  padding-top: 200px;
-  padding-bottom: 280px;
-}
 
-.foot {
+.foot.container {
   background-color: var(--background-color);
   width: 1600px;
   height: 252px;
@@ -370,23 +449,10 @@ ul {
   height: 80px;
   width: 1600px;
   align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-
-  align-content: space-around;
-  margin-left: 215px;
-}
-.item {
-  font-weight: 400px;
-  font-size: 14px;
-  width: 270px;
-  height: 133px;
-  letter-spacing: 0.03em;
 }
