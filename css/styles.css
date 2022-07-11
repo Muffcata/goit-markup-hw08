@@ -26,16 +26,10 @@ ul {
   padding: 0;
 }
 
-p {
-  padding: 0;
-}
-
 img {
   display: block;
 }
 body {
-  width: 1600px;
-
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: var(--brand-color);
@@ -75,6 +69,7 @@ body {
   margin-bottom: 10px;
 }
 .section-middle {
+  width: 1600px;
   padding-top: 94px;
 }
 /* PORTFOLIO */
@@ -88,14 +83,15 @@ body {
   color: var(--brand-color);
   font-weight: 500;
   font-size: 16px;
-  width: 72px;
-  height: 19px;
   text-align: center;
 }
+
 .middle {
   background-color: var(--background-color);
   width: 1600px;
   height: 600px;
+  margin: 0;
+  padding: 0;
 }
 /* STUDIO */
 .text {
@@ -127,6 +123,7 @@ body {
 }
 
 .work-team h2 {
+  width: 1600px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -142,20 +139,18 @@ body {
   line-height: 1.5;
 }
 .team h2 {
+  width: 1600px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   padding-bottom: 50px;
 }
+
 .team-images {
   display: flex;
+
   flex-direction: row;
-  justify-content: space-between;
   padding-bottom: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-  width: 270px;
-  height: 368px;
 }
 .team-images li figure {
   box-shadow: 0 2px 1px 0 #000000;
@@ -168,19 +163,32 @@ body {
   border-bottom-left-radius: 4px;
   border-image-width: 270px;
 }
+.team-images li figure figcaption {
+  flex-wrap: nowrap;
+
+  width: 270px;
+}
+.first-photo {
+  margin-left: 215px;
+  padding-right: 30px;
+}
 .img-item {
   display: flex;
-  gap: 30px;
+
   margin-left: 215px;
   padding-top: 50px;
+  padding-bottom: 94px;
 }
 .team {
   width: 1600px;
   height: 648px;
   background-color: var(--background-color-button);
   padding-top: 94px;
+  padding-bottom: 94px;
 }
-
+figcaption {
+  background-color: var(--white-color);
+}
 .social-link {
   text-decoration: none;
   font-weight: 500;
@@ -408,10 +416,12 @@ ul {
   list-style: none;
 }
 
-.foot.container {
+.foot {
   background-color: var(--background-color);
   width: 1600px;
-  height: 252px;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo {
@@ -428,6 +438,9 @@ ul {
   line-height: 24px;
   width: 247px;
   height: 21px;
+  margin-left: 215px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .container {
@@ -455,4 +468,7 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.down-link a {
+  margin-left: 215px;
 }
