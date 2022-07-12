@@ -39,7 +39,7 @@ ul {
   width: 1200px;
 }
 
-///////////////////////////////////////////////////////////////////* ONLY STUDIO *///////////////////////////////////////////////////
+/* Only Studio */
 
 .social-link {
   text-decoration: none;
@@ -49,13 +49,11 @@ ul {
   height: 16px;
   color: var(--light-color);
   cursor: pointer;
-  margin-right: 50px;
 }
 .social-link:hover,
 .social-link:focus {
   color: var(--light-color);
 }
-
 .link-black-two {
   font-family: "Roboto";
   font-weight: 500;
@@ -64,8 +62,8 @@ ul {
   color: var(--light-color);
   text-decoration: none;
   margin-right: 46px;
-  padding-left: 93px;
 }
+
 .link-black-seven {
   font-family: "Roboto";
   color: var(--brand-color);
@@ -85,22 +83,13 @@ ul {
   margin-right: 371px;
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  align-content: space-around;
-  margin-left: 215px;
-}
 .name {
   color: var(--brand-color);
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   margin-top: 0px;
-  padding-top: 30px;
+  
 }
 .caption-team {
   color: var(--subtitle-color);
@@ -117,6 +106,15 @@ ul {
   height: 133px;
   letter-spacing: 0.03em;
 }
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  align-content: space-around;
+  margin-left: 215px;
+}
 .surname {
   font-weight: 700;
   font-size: 14px;
@@ -127,51 +125,67 @@ ul {
 }
 .section-middle {
   width: 1600px;
+  margin: 0;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .middle {
   background-color: var(--background-color);
   width: 1600px;
   height: 600px;
-  margin: 0;
-  padding: 0;
 }
 .text {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
+
   text-align: center;
-  letter-spacing: 0.06em;
   padding-top: 200px;
   padding-left: 452px;
   padding-right: 452px;
-  text-transform: uppercase;
 }
 .no-active-blue {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
+  width: 200px;
+  height: 50px;
   text-align: center;
   color: var(--white-color);
   background-color: var(--light-color);
   border-radius: 4px;
   border-style: none;
-  width: 200px;
-  height: 50px;
   margin-top: 30px;
-  margin-left: 700px;
+  margin-right: 700px;
   margin-bottom: 200px;
+  margin-left: 700px;
+
   cursor: pointer;
+}
+.work-team {
+  
+  width: 1600px;
+
+}
+.img-item li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .work-team h2 {
-  width: 1600px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   padding-bottom: 50px;
 }
-
+.work-team-photo {
+  display: flex;
+  margin-left: 215px;
+  list-style: none;
+  margin-right: 30px;
+}
 .subtitle-one {
   font-weight: 700;
   font-size: 36px;
@@ -180,18 +194,27 @@ ul {
   margin-bottom: 50px;
   line-height: 1.5;
 }
-.team h2 {
+.team {
   width: 1600px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   padding-bottom: 50px;
+  padding-top:94px;
+}
+.team-main {
+  display-flex;
+  width: 1600px;
+  height: 648px;
+  background-color: var(--background-color-button);
+
+}
+.img-team{
+display:flex;
 }
 
-.team-images {
-  display: flex;
-  padding-bottom: 94px;
-}
+
+
 .team-images li figure {
   box-shadow: 0 2px 1px 0 #000000;
   box-shadow: 0 1px 1px 0 #000000;
@@ -203,27 +226,7 @@ ul {
   border-bottom-left-radius: 4px;
   border-image-width: 270px;
 }
-.team-images li figure figcaption {
-  flex-wrap: nowrap;
 
-  width: 270px;
-}
-
-.img-item li {
-  display: inline-block;
-  padding-left: 30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
-.team {
-  width: 1600px;
-  height: 648px;
-  background-color: var(--background-color-button);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.first .second .third {
-}
 figcaption {
   background-color: var(--white-color);
 }
@@ -231,10 +234,12 @@ figcaption {
   margin-left: 215px;
 }
 
-////////////////////////////////////////////////////////* PORTFOLIO i STUDIO*//////////////////////////////////////////////////////////////
+/* Portfolio i Studio */
 .logo {
   font-family: "Raleway";
-  padding-right: 93px;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .light {
   font-family: "Raleway", sans-serif;
@@ -272,7 +277,6 @@ figcaption {
   font-size: 14px;
   width: 135px;
   height: 16px;
-
   margin-left: 50px;
 }
 .social-link-two {
@@ -282,10 +286,12 @@ figcaption {
   font-size: 14px;
   width: 135px;
   height: 16px;
+  margin-left: 50px;
 }
 .line {
   display: flex;
   text-decoration: none;
+  padding-top: 32px;
 }
 
 .caption {
@@ -317,21 +323,21 @@ figcaption {
   margin-top: 20px;
   margin-bottom: 9px;
 }
-/* do zrobienia>? */
+
 .main {
   display: flex;
-  height: 80px;
   width: 1600px;
-  align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  height: 80px;
 }
 
-///////////////////////////////////////////////////////////* ONLY PORTFOLIO *////////////////////////////////////////////////
+
+/* Only Portfolio */
+
+.section{
+  border:1px;
+  width: 1170px;
+height: 1360px;
+}
 .social-link-three {
   color: var(--subtitle-color);
   font-weight: 500;
@@ -478,4 +484,3 @@ figcaption {
   width: 322px;
   height: 36px;
 }
-////////////////////////////////////////////////////////////////* koniec*//////////////////////////////////////////////
