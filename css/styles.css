@@ -5,6 +5,8 @@
   --white-color: rgba(255, 255, 255, 1);
   --background-color: rgba(47, 48, 58, 1);
   --background-color-button: rgba(245, 244, 250, 1);
+  --photo-border: 
+  rgba(238, 238, 238, 1);
 }
 *,
 *::after *::before {
@@ -88,7 +90,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  margin-top: 0px;
+  padding-top: 30px;
+  
   
 }
 .caption-team {
@@ -97,8 +100,11 @@ ul {
   line-height: 1.5;
   font-size: 14px;
   text-align: center;
-  padding-bottom: 30px;
+ margin-top: 10px;
+ padding-bottom:30px;
+  
 }
+
 .item {
   font-weight: 400px;
   font-size: 14px;
@@ -203,16 +209,16 @@ ul {
   padding-top:94px;
 }
 .team-main {
-  display-flex;
+  
   width: 1600px;
   height: 648px;
+  display-flex;
   background-color: var(--background-color-button);
 
 }
 .img-team{
 display:flex;
 }
-
 
 
 .team-images li figure {
@@ -225,21 +231,32 @@ display:flex;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-image-width: 270px;
+ 
 }
 
 figcaption {
   background-color: var(--white-color);
+  margin:0;
 }
 .down-link a {
   margin-left: 215px;
+  padding-bottom: 60px;
 }
 
 /* Portfolio i Studio */
+
+
 .logo {
   font-family: "Raleway";
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
+}
+.logo-footer{
+  font-family: "Raleway";
+
+
+margin-bottom: 20px;
 }
 .light {
   font-family: "Raleway", sans-serif;
@@ -287,6 +304,7 @@ figcaption {
   width: 135px;
   height: 16px;
   margin-left: 50px;
+  
 }
 .line {
   display: flex;
@@ -304,10 +322,12 @@ figcaption {
   text-align: left;
 }
 .foot {
-  background-color: var(--background-color);
   width: 1600px;
+height: 252px;
+  background-color: var(--background-color);
+  
 
-  padding-top: 94px;
+ padding-top: 60px;
   padding-bottom: 94px;
 }
 .text-adress {
@@ -334,9 +354,10 @@ figcaption {
 /* Only Portfolio */
 
 .section{
-  border:1px;
-  width: 1170px;
-height: 1360px;
+  text-align: center;
+padding-top:94px;
+
+
 }
 .social-link-three {
   color: var(--subtitle-color);
@@ -380,7 +401,43 @@ height: 1360px;
 .line-buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
+.portfolio-middle{
+  width: 1170px;
+  height: 1288px;
+  display: flex;
+  padding-bottom: 94px;
+  margin-left: 215px;
+}
+.main-portfolio{
+  width: 1170px;
+  height: 1288px;
+  display:flex;
+  gap:30px;
+ flex-wrap: wrap;
+ 
+}
+.pictures {
+  display: block;
+  width: 370px;
+  height: 404px;
+}
+.box{
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--photo-border);
+  border-bottom-width: 1px ;
+  border-bottom-style: solid;
+  border-bottom-color: var(--photo-border);
+  border-left-width: 1px ; 
+  border-left-style: solid;
+  border-left-color: var(--photo-border);
+
+}
+
+ 
+
 .link {
   color: var(--brand-color);
   text-decoration: none;
@@ -483,4 +540,16 @@ height: 1360px;
   font-size: 16px;
   width: 322px;
   height: 36px;
+  margin-left: 24px;
+  margin-top:20px;
+}
+.caption-two{
+  color: var(--subtitle-color);
+  font-weight: 400;
+  
+  width: 322px;
+  height: 30px;
+  margin-top:4px;
+  margin-left: 24px;
+  
 }
