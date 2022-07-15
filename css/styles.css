@@ -40,6 +40,11 @@ ul {
 .container {
   width: 1200px;
 }
+.section{
+
+padding-top:94px;
+
+  }
 
 /* Only Studio */
 
@@ -90,7 +95,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  padding-top: 30px;
+  
   
   
 }
@@ -100,8 +105,8 @@ ul {
   line-height: 1.5;
   font-size: 14px;
   text-align: center;
- margin-top: 10px;
- padding-bottom:30px;
+
+
   
 }
 
@@ -111,30 +116,36 @@ ul {
   width: 270px;
   height: 133px;
   letter-spacing: 0.03em;
+ 
 }
 .card-set {
+  
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   align-content: space-around;
-  margin-left: 215px;
+  
+ 
 }
+
 .surname {
   font-weight: 700;
   font-size: 14px;
-  text-transform: uppercase;
   width: 270px;
   height: 16px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-left: 215px;
+
 }
-.section-middle {
-  width: 1600px;
-  margin: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+.caption {
+  color: var(--subtitle-color);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+text-align: left;
+
 }
+
 .middle {
   background-color: var(--background-color);
   width: 1600px;
@@ -154,24 +165,35 @@ ul {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
-  width: 200px;
-  height: 50px;
   text-align: center;
   color: var(--white-color);
   background-color: var(--light-color);
   border-radius: 4px;
   border-style: none;
-  margin-top: 30px;
-  margin-right: 700px;
-  margin-bottom: 200px;
-  margin-left: 700px;
-
+  padding-top: 10px;
+  padding-right: 41px;
+  padding-bottom: 10px;
+  padding-left: 42px;
   cursor: pointer;
+  margin-top:30px;
+  margin-left:700px;
 }
 .work-team {
-  
+ background-color: var(--background-color-button);
+ width: 1600px;
+ padding-top: 94px;
+ padding-bottom:94px;
+}
+.job-team{
   width: 1600px;
-
+  padding-top: 94px;
+  padding-bottom:94px;
+}
+.job-team>h2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 50px;
 }
 .img-item li {
   display: inline-block;
@@ -205,8 +227,8 @@ ul {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding-bottom: 50px;
-  padding-top:94px;
+ 
+  
 }
 .team-main {
   
@@ -217,7 +239,9 @@ ul {
 
 }
 .img-team{
-display:flex;
+display: flex;
+width: 270px;
+height: 368px;
 }
 
 
@@ -236,27 +260,42 @@ display:flex;
 
 figcaption {
   background-color: var(--white-color);
-  margin:0;
+  width: 270px;
+  height: 108px;
+ display: block;
+
 }
 .down-link a {
   margin-left: 215px;
   padding-bottom: 60px;
 }
 
+
+
+
+
+
 /* Portfolio i Studio */
+
+
+
+
+
+
+
+
 
 
 .logo {
   font-family: "Raleway";
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+margin-top: 24px;
+margin-bottom: 25px;
 }
 .logo-footer{
   font-family: "Raleway";
-
-
 margin-bottom: 20px;
+padding-top:60px;
 }
 .light {
   font-family: "Raleway", sans-serif;
@@ -305,30 +344,26 @@ margin-bottom: 20px;
   height: 16px;
   margin-left: 50px;
   
+  
 }
-.line {
-  display: flex;
+.line-one {
+display: flex;
   text-decoration: none;
-  padding-top: 32px;
+margin-top:32px;
+margin-bottom:32px;
 }
 
-.caption {
-  color: var(--subtitle-color);
-  font-weight: 400;
-  line-height: 1.5;
-  width: 270px;
-  height: 75px;
-  font-size: 14px;
-  text-align: left;
-}
+.main {
+  display: flex;
+  width: 1600px;
+  height: 80px;}
+
+
 .foot {
   width: 1600px;
 height: 252px;
   background-color: var(--background-color);
   
-
- padding-top: 60px;
-  padding-bottom: 94px;
 }
 .text-adress {
   color: var(--white-color);
@@ -344,21 +379,12 @@ height: 252px;
   margin-bottom: 9px;
 }
 
-.main {
-  display: flex;
-  width: 1600px;
-  height: 80px;
-}
+
 
 
 /* Only Portfolio */
 
-.section{
-  text-align: center;
-padding-top:94px;
 
-
-}
 .social-link-three {
   color: var(--subtitle-color);
   font-weight: 500;
@@ -390,10 +416,12 @@ padding-top:94px;
   margin-right: 46px;
 }
 .link-black-six {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: var(--brand-color);
   text-decoration: none;
   font-weight: 500;
+  line height:16px;
+letter-spacing: 0.02em;
   width: 58px;
   height: 16px;
   margin-right: 364px;
@@ -401,7 +429,7 @@ padding-top:94px;
 .line-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  padding-bottom: 34px;
 }
 .portfolio-middle{
   width: 1170px;
@@ -418,12 +446,13 @@ padding-top:94px;
  flex-wrap: wrap;
  
 }
-.pictures {
+.pictures > img{
   display: block;
-  width: 370px;
-  height: 404px;
+  
 }
 .box{
+  height:110px;
+  display: block;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: var(--photo-border);
@@ -541,7 +570,8 @@ padding-top:94px;
   width: 322px;
   height: 36px;
   margin-left: 24px;
-  margin-top:20px;
+  padding-top: 20px;
+  
 }
 .caption-two{
   color: var(--subtitle-color);
@@ -552,4 +582,5 @@ padding-top:94px;
   margin-top:4px;
   margin-left: 24px;
   
+  padding-top: 4px;
 }
