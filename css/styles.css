@@ -41,7 +41,8 @@ ul {
 }
 .container {
   width: 1200px;
- 
+ margin:0 auto;
+
 }
 .section{
 padding-bottom: 94px;
@@ -123,7 +124,7 @@ padding-top:94px;
  
 }
 .card-set> ul {
-width: 1600px;
+
  flex-wrap: wrap;
  display: flex;
 gap:30px;
@@ -152,7 +153,7 @@ text-align: left;
 
 .middle {
   background-color: var(--background-color);
-  width: 1600px;
+ 
   height: 600px;
 }
 .text {
@@ -187,7 +188,7 @@ text-align: left;
 
 .section-job-team{
 
-  width:1600px;
+ 
   
   padding-top:94px;
   padding-bottom: 94px;
@@ -199,12 +200,12 @@ justify-content: center;
 
 
 .section-work-team {
-  width:1600px;
+ 
   padding-top:94px;
   padding-bottom: 94px;
   display: flex;
 justify-content: center;
-  
+ 
   background-color: var(--background-color-button);
 }
 .team-images li figure {
@@ -220,9 +221,8 @@ justify-content: center;
  }
 
   .img-team{
-    width: 1600px;
+  
     display: flex;
-
   flex-wrap: wrap;
   gap:30px;
   padding:0;
@@ -234,7 +234,7 @@ justify-content: center;
 padding-bottom: 50px;
 }
 .work-team-photo>ul {
-  width:1600px;
+ 
   display: flex;
   
   list-style: none;
@@ -251,18 +251,6 @@ padding-bottom: 50px;
   line-height: 1.5;
 }
 
-.team-main {
-  
-  width: 1600px;
-  height: 648px;
-  display-flex;
-  background-color: var(--background-color-button);
-
-}
-
-
-
-
 
 figcaption {
   background-color: var(--white-color);
@@ -275,9 +263,6 @@ figcaption {
   margin-left: 215px;
   padding-bottom: 60px;
 }
-
-
-
 
 
 
@@ -357,17 +342,17 @@ margin-bottom:32px;
 
 .main {
   display: flex;
-  width: 1600px;
- 
-padding:0;
-margin:0;
+
+ padding-top:94px;
+ padding-right: 94px;
+
 
 }
   
 
 
 .foot {
-  width: 1600px;
+
 
   background-color: var(--background-color);
   padding:0;
@@ -391,12 +376,21 @@ margin:0;
 
 /* Only Portfolio */
 
+.section-main{
+  padding-top:94px;
+  padding-bottom: 94px;
+  display: flex;
+  justify-content: center;
 
+  
+  flex-wrap: wrap;
+  gap:30px;
+}
 .social-link-three {
   color: var(--subtitle-color);
   font-weight: 500;
   font-size: 14px;
-  width: 1600px;
+
   height: 252px;
 }
 
@@ -441,9 +435,7 @@ letter-spacing: 0.02em;
 .portfolio-middle{
   width: 1170px;
   height: 1288px;
-  display: flex;
-  padding-bottom: 94px;
-  margin-left: 215px;
+ 
 }
 .main-portfolio{
   width: 1170px;
