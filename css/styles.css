@@ -362,10 +362,7 @@ padding:60px;
 .section-portfolio{
   padding-top:94px;
   padding-bottom: 94px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap:30px;
+ 
 }
 .social-link-three {
   color: var(--subtitle-color);
@@ -381,6 +378,7 @@ padding:60px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
+  line height:16px;
   cursor: pointer;
   text-decoration: none;
   padding-right: 46px;
@@ -391,6 +389,7 @@ padding:60px;
   color: var(--light-color);
   text-decoration: none;
   font-weight: 500;
+  line height:16px;
   padding-right: 46px;
 }
 .link-black-six {
@@ -405,8 +404,9 @@ padding-right: 46px;
 }
 .line-buttons {
   display: flex;
-  justify-content: center;
-  padding-bottom: 34px;
+ justify-content: center;
+  
+
 }
 .portfolio-middle{
   width: 1170px;
@@ -414,24 +414,29 @@ padding-right: 46px;
  
 }
 .main-portfolio{
-  width: 1170px;
-  height: 1288px;
+  
   display:flex;
   gap:30px;
  flex-wrap: wrap;
- 
+ justify-content: center;
 }
 .pictures > img{
-  display: block;
+  display: flex;
+  margin-top: 56px;
   
 }
 .box{
-  
-  display: flex;
-  justify-content: center;
+  height:110px;
+  display: block;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: var(--photo-border);
+  border-bottom-width: 1px ;
+  border-bottom-style: solid;
+  border-bottom-color: var(--photo-border);
+  border-left-width: 1px ; 
+  border-left-style: solid;
+  border-left-color: var(--photo-border);
 
 }
 
@@ -444,15 +449,13 @@ padding-right: 46px;
   cursor: pointer;
   font-size: 16px;
   line-height: 26px;
-  width: 77px;
-  height: 26px;
-  background-color: var(--light-color);
-  color: var(--white-color);
+ 
   border-style: none;
   border-radius: 4px;
-  width: 121px;
-  height: 38px;
-  margin-left: 510px;
+  border-style: none;
+padding: 6px 22px;
+margin-left: 8px;
+ 
 }
 .link:hover {
   background-color: var(--light-color);
@@ -463,15 +466,12 @@ padding-right: 46px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  width: 49px;
-  height: 26px;
   background-color: var(--background-color-button);
   border-style: none;
   border-radius: 4px;
-  width: 93px;
-  height: 38px;
   cursor: pointer;
   margin-left: 8px;
+  padding: 6px 22px;
 }
 .no-active-one:hover {
   background-color: var(--light-color);
@@ -482,15 +482,13 @@ padding-right: 46px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  width: 70px;
-  height: 26px;
   background-color: var(--background-color-button);
-  border-style: none;
   border-radius: 4px;
-  width: 114px;
-  height: 38px;
+  border-style: none;
+padding: 6px 22px;
+margin-left: 8px;
   cursor: pointer;
-  margin-left: 8px;
+
 }
 .no-active-two:hover {
   background-color: var(--light-color);
@@ -501,15 +499,13 @@ padding-right: 46px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  width: 47px;
-  height: 26px;
   background-color: var(--background-color-button);
   border-style: none;
   border-radius: 4px;
-  width: 91px;
-  height: 38px;
   cursor: pointer;
   margin-left: 8px;
+  
+padding: 6px 22px;
 }
 .no-active-three:hover {
   background-color: var(--light-color);
@@ -520,15 +516,13 @@ padding-right: 46px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  width: 77px;
-  height: 26px;
   background-color: var(--background-color-button);
   border-style: none;
   border-radius: 4px;
-  width: 121px;
-  height: 38px;
   cursor: pointer;
   margin-left: 8px;
+
+padding: 6px 22px;
 }
 .no-active-four:hover {
   background-color: var(--light-color);
