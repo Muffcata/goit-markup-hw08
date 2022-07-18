@@ -163,7 +163,7 @@ text-align: left;
 
 .section-middle {
   background-color: var(--background-color);
-  background-image: url(/images/image\ \(13\).jpg);
+  background-image: url(../images/image\ \(13\).jpg);
   background-size: width: 1600px;
   height: 600px;
  padding-top: 94px;
