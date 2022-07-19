@@ -162,8 +162,10 @@ text-align: left;
 }
 
 .section-middle {
-  
-  background-image: url(../images/image\ \(13\).jpg);
+ 
+  background-image: linear-gradient(
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),url(../images/image\ \(13\).jpg);
   background-size: width: 1600px;
   height: 600px;
  padding-top: 94px;
@@ -351,17 +353,23 @@ padding-bottom: 60px;
   padding-top: 20px;
 }
 .join-to-us{
-  display: flex;
+ 
   font-weight: 700;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
-
-
+padding-bottom: 20px;
+}
+.footer-media{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 
 }
+
+
 .social-link-nine{
   color: var(--subtitle-color);
   text-decoration: none;
