@@ -134,14 +134,16 @@ figure{ margin:0;}
   height: 101px;
   letter-spacing: 0.03em;
  padding:0;
- justify-items: center;
+ 
  
 }
-.card-set {
-  display: flex;
+.card-set{
+
  flex-wrap: wrap;
+ display: flex;
  gap:30px;
-justify-content: center;
+ padding:0;
+justify-content:space-between;
 }
 
 .surname {
