@@ -260,11 +260,13 @@ padding:0;
   margin-top: 47px;
 }
 
-.our-clients li{
+.our-clients {
   list-style: none;
     display: flex;
+
     gap:30px;
     fill: var(--clients);
+   
 }
 
 .clients {
