@@ -260,7 +260,7 @@ padding:0;
   margin-top: 47px;
 }
 
-.our-clients{
+.our-clients li{
   list-style: none;
     display: flex;
     gap:30px;
@@ -275,7 +275,7 @@ padding:0;
  border-radius: 4px;
  display: flex;
  justify-content: center;
-padding:17px 32px 14px 32px;
+
 
 }
 
