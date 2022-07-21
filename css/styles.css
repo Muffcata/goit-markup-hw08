@@ -9,6 +9,7 @@
   rgba(238, 238, 238, 1);
   --background-social: rgba(255, 255, 255, 0.1);
   --clients: rgba(175, 177, 184, 1);
+  
 }
 *,
 *::after *::before {
@@ -58,7 +59,7 @@ padding-top:94px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  color: var(--light-color);
+  color: var(--subtitle-color);
   cursor: pointer;
   padding-right: 46px;
   padding-top:32px;
@@ -106,28 +107,62 @@ padding-top:94px;
   color: var(--brand-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 2;
-  letter-spacing: 0.03em;
+  
   text-align: center;
-  padding-top: 30px;
+  margin-top: 30px;
   
   
 }
 .caption-team {
   color: var(--subtitle-color);
   font-weight: 400;
-  letter-spacing: 0.03em;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
+  
   font-size: 16px;
   text-align: center;
   text-transform: none;
-  padding-bottom: 30px;
-margin-bottom:10px;
+  margin-top: 10px;
+
   
 }
 figure{ margin:0;}
 
+.socialmedia-click{
+  margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 206px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+}
+.click-button{
+ display: inline-flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--clients);
+    cursor: pointer;
+}
+.click-button:hover,
+.click-button:focus,
+.click-button:active{
+  background-color: var(--light-color);
+  fill: var(--white-color)
+}
+.push{
+  width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--clients);
+    
+}
 .item {
   font-weight: 400px;
   font-size: 14px;
@@ -147,7 +182,16 @@ figure{ margin:0;}
  padding:0;
 justify-content:center;
 }
-
+.card-set-icon{
+   display: flex;
+    width: 270px;
+    height: 120px;
+    background: var(--background-color-button);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
 .surname {
   font-weight: 700;
   font-size: 14px;
@@ -261,24 +305,33 @@ padding:0;
 }
 
 .our-clients {
+  justify-content: center;
+  margin-top:47px;
   list-style: none;
     display: flex;
- gap:30px;
-   
-   
+   gap: 30px;
+
 }
 
 .clients {
- fill: var(--clients);
+
  width: 170px;
  height: 92px;
  border: 1px solid rgba(175, 177, 184, 1);
  border-radius: 4px;
  display: flex;
+align-items: center;
  justify-content: center;
-
+ fill: var(--clients);
 
 }
+.clients:hover,
+.clients:focus{
+  fill: var(--light-color);
+ border-color: var(--light-color);
+  cursor: pointer;
+}
+
 
 /* Portfolio i Studio */
 
@@ -294,10 +347,21 @@ padding:0;
 
 
 .logo-footer{
+  display: flex;
   font-family: "Raleway";
-padding-bottom: 20px;
-padding-top:60px;
-justify-content: center;
+ font-weight: 700;
+    font-size: 26px;
+    
+
+}
+.light-foot{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--light-color);
+  text-decoration: none;
 }
 .light {
   font-family: "Raleway";
@@ -307,7 +371,7 @@ justify-content: center;
   line-height: 31px;
   color: var(--light-color);
   text-decoration: none;
-  padding-top: 24px;
+padding-top: 24px;
   padding-bottom: 25px;
 }
 
@@ -318,9 +382,8 @@ justify-content: center;
   font-size: 26px;
   color: var(--brand-color);
   text-decoration: none;
-  padding-top: 24px;
+ padding-top: 24px;
   padding-bottom: 25px;
-
 }
 
 .logo-dark {
@@ -346,7 +409,7 @@ justify-content: center;
 .line-one {
 
   display: flex;
- padding-left: 371px;}
+ padding-left: 345px;}
 
 
 
@@ -362,9 +425,8 @@ justify-content: center;
 
 .section-foot {
   display: flex;
-align-content: center;
-padding-top: 60px;
-padding-bottom: 60px;
+  padding-top:60px;
+  padding-bottom: 60px;
   background-color: var(--background-color);
   font-size: 14px;
 }
@@ -378,7 +440,7 @@ padding-bottom: 60px;
   padding-top: 20px;
 }
 .join-to-us{
- 
+ display: flex;
   font-weight: 700;
 font-size: 14px;
 line-height: 16px;
@@ -386,21 +448,23 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
 
+
 }
 .footer-media{
-  display: flex;
-  justify-content: center;
+  
+ display: flex;
   gap: 10px;
   fill: var(--white-color);
+  
 
 }
 .socialmedia-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 12px;
   display: block;
   background: var(--background-social);
+  cursor:pointer;
 }
 .socialmedia-link:hover,
 .socialmedia-link:focus {
@@ -413,6 +477,10 @@ color: var(--white-color);
   font-weight: 500;
   font-size: 14px;
   
+}
+.socialmedia-footer{
+  
+  padding-left: 70px;
 }
 
 /* Only Portfolio */
@@ -428,7 +496,7 @@ color: var(--white-color);
   color: var(--subtitle-color);
   font-weight: 500;
   font-size: 14px;
-  height: 252px;
+  
 }
 
 .social-link-two {
@@ -446,16 +514,19 @@ color: var(--white-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;}
-  
+
+  .line-one-portfolio{
+  display: flex;
+  padding-left:345px;
+
+}
 .link-black-three {
   font-family: "Roboto";
   color: var(--brand-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height:16px;
   cursor: pointer;
-  text-decoration: none;
   padding-right: 46px;
 }
 
@@ -464,7 +535,6 @@ color: var(--white-color);
   color: var(--light-color);
   text-decoration: none;
   font-weight: 500;
-  line height:16px;
   padding-right: 46px;
 }
 .link-black-six {
@@ -472,10 +542,7 @@ color: var(--white-color);
   color: var(--brand-color);
   text-decoration: none;
   font-weight: 500;
-  line height:16px;
-letter-spacing: 0.02em;
- 
-padding-right: 46px;
+  padding-right: 46px;
 }
 .line-buttons {
   display: flex;
