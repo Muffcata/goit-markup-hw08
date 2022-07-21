@@ -263,14 +263,13 @@ padding:0;
 .our-clients {
   list-style: none;
     display: flex;
-
-    gap:30px;
-    fill: var(--clients);
+ gap:30px;
+   
    
 }
 
 .clients {
- 
+ fill: var(--clients);
  width: 170px;
  height: 92px;
  border: 1px solid rgba(175, 177, 184, 1);
