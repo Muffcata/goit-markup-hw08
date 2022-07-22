@@ -44,6 +44,8 @@ ul {
 .container {
   width: 1200px;
  margin:0 auto;
+ padding: 0px 15px;
+ align-items:  center;
 
 }
 .section{
@@ -453,10 +455,14 @@ color: var(--white-color);
 .footer-media{
   
  display: flex;
-  gap: 10px;
+  gap:30px;
   fill: var(--white-color);
   
 
+}
+.block{
+  
+  display:flex;
 }
 .socialmedia-link {
   width: 44px;
@@ -479,8 +485,9 @@ color: var(--white-color);
   
 }
 .socialmedia-footer{
-  
-  padding-left: 70px;
+  display: flex;
+  padding-top:60px;
+  padding-bottom: 60px;
 }
 
 /* Only Portfolio */
