@@ -716,7 +716,7 @@ padding: 6px 22px;
 .icon {
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(sprite.svg);
+  background-image: url(icons.svg);
 }
 .icon-envelope-1 {
   width: 43px;
