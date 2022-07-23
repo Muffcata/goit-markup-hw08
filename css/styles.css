@@ -44,7 +44,7 @@ ul {
 .container {
   width: 1200px;
  margin:0 auto;
- padding: 0px 15px;
+
  
 
 }
@@ -345,6 +345,7 @@ align-items: center;
 .main{
   display: flex;
   justify-content: center;
+  
 }
 
 
@@ -489,8 +490,6 @@ color: var(--white-color);
 .socialmedia-footer{
   display: flex;
 
-
-  
 }
 
 /* Only Portfolio */
@@ -713,4 +712,89 @@ padding: 6px 22px;
   margin-left: 24px;
   
   padding-bottom: 20px;
+}
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-envelope-1 {
+  width: 43px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-group-5 {
+  width: 67px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-group-4 {
+  width: 43px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.icon-group-3 {
+  width: 65px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icon-group-2 {
+  width: 34px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-group-1 {
+  width: 24px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.icon-group {
+  width: 27px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icon-astronaut-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-diagram-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px 0;
+}
+.icon-clock-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.icon-antenna-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px 0;
+}
+.icon-smartphone {
+  width: 20px;
+  height: 32px;
+  background-position: -720px 0;
+}
+.icon-facebook {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -96px;
+}
+.icon-instagram {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -96px;
+}
+.icon-twitter {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -96px;
+}
+.icon-linkedin2 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -96px;
 }
