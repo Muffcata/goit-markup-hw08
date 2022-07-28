@@ -33,7 +33,7 @@ ul {
 
 body {
   
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", 'Raleway', sans-serif;
   line-height: 1.5;
   color: var(--brand-color);
   background-color: var(--white-color);
@@ -102,16 +102,19 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .link-black-two {
   font-family: "Roboto";
   font-weight: 500;
+ 
   color: var(--brand-color);
   text-decoration: none;
   display:flex;
-  padding-right: 46px;
+  margin-right: 46px;
 transition-property:color; 
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+position: relative;
 }
-.link-black-two:hover{
+.link-black-two:hover,
+.link-black-two:active,
+.link-black-two:focus{
   color: var(--light-color);
 }
 .link-black-seven {
@@ -119,21 +122,62 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--brand-color);
   text-decoration: none;
   font-weight: 500;
-  padding-right: 46px;
+  margin-right: 46px;
   transition-property:color; 
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+position: relative;
 }
-.link-black-seven:hover{
+.link-black-seven:hover,
+.link-black-seven:active,
+.link-black-seven:focus{
     color: var(--light-color);
+}
+
+.link-black-seven:hover::after{
+   content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:52px;
+  background: var(--light-color);
+  height: 4px;
+  border-radius: 10px 10px 10px 10px;
+}
+.link-black-seven-index{
+   font-family: "Roboto";
+  color: var(--brand-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 46px;
+  transition-property:color; 
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-black-seven-index:hover{
+   color: var(--light-color);
+}
+.link-black-two-portfolio{
+font-family: "Roboto";
+  font-weight: 500;
+ 
+  color: var(--brand-color);
+  text-decoration: none;
+  display:flex;
+  margin-right: 46px;
+transition-property:color; 
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-black-two-portfolio:hover{
+   color: var(--light-color);
 }
 .link-black-four {
   font-family: "Roboto";
   color: var(--brand-color);
   text-decoration: none;
   font-weight: 500;
-  padding-right: 46px;
+  margin-right: 46px;
 transition-property:color; 
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -277,8 +321,8 @@ text-align: center;
   width: 200px;
 height: 50px;
   text-align: center;
-  color: var(--white-color);
-  background-color: var(--light-color);
+  color: var(--brand-color);
+  background-color: var(--white-color);
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -288,8 +332,17 @@ height: 50px;
   padding-bottom: 10px;
   cursor: pointer;
 
-}
+transition-property: background-color; color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.no-active-blue:hover{
+  color: var(--white-color);
+background-color: var(--light-color);
+
+
+}
 
 
 .section-job-team{
@@ -409,30 +462,29 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop{
   position:fixed;
-  left:0;
   top:0;
+  left: 0;
   width: 100%;
 height: 100%;
 background-color: rgba(0, 0, 0, 0.2);
+transition: opacity 250ms ease-in, visibility 250ms linear; 
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .modal{
   position:absolute;
-  transform: translateX(0), translateY(0);
+  top:50%;
+  left:50%;
   width: 528px;
-height: 581px;
+ min-height: 581px;
   background-color: var(--white-color);
-  margin-top: 221px;
-  margin-left: 536px;
-  margin-bottom: 222px;
+  transform: translate(-50%, -50%); 
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
-
- @keyframes modalView{
-0%{transform:skew(30deg,90deg)}
-50%{transform:skew(45deg,70deg)}
-100% {transform:skew(100deg,100deg)}
-
-} 
 
 .close-btn{
 position: absolute;
@@ -445,17 +497,34 @@ drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 cursor:pointer;
-
+transition-property: background-color, border, color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover{
+  color: var(--white-color);
+background-color: var(--light-color);
+border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .is-hidden{
   opacity:0;
   visibility: hidden;
   pointer-events: none;
-   animation-name: modalView;
-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
 }
 
 /* Portfolio i Studio */
+
+.link-black-two:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:52px;
+  background: var(--light-color);
+  height: 4px;
+  border-radius: 10px 10px 10px 10px;
+}
 
 .section-main {
   display: flex;
@@ -472,7 +541,7 @@ padding:0;
 
 .logo-footer{
   display: flex;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
  font-weight: 700;
  font-size: 26px;
 padding-top: 60px;
@@ -480,7 +549,7 @@ padding-top: 60px;
 
 }
 .light-foot{
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -489,7 +558,7 @@ padding-top: 60px;
   text-decoration: none;
 }
 .light {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -501,7 +570,7 @@ padding-top: 24px;
 }
 
 .light-black {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -712,44 +781,8 @@ color: var(--white-color);
 margin-top:49px;
 margin-left:24px;
 }
-/* .pictures >img{
- font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-color: var(--white-color);
-width: 370px;
-height: 294px;
-background-color: var(--light-color); */
-
-/* position:absolute; */
-
-/* .pictures>img:hover{
-animation-name: overlay;
-animation-duration: 500ms;
-
-}
- @keyframes overlay{
-0%{background-color: none;}
-
-100% {background-color: var(--light-color);}
 
 
-} */
-
-
-/* .label-portfolio{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-color: var(--white-color);
-width: 370px;
-height: 294px;
-background-color: var(--light-color);
-position:absolute;
-
-} */
 .link {
   color: var(--brand-color);
   text-decoration: none;
