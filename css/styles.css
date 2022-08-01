@@ -44,7 +44,7 @@ ul {
 .container {
   width: 1200px;
  margin:0 auto;
-
+padding: 0 15px;
  
 
 }
@@ -177,7 +177,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--brand-color);
   text-decoration: none;
   font-weight: 500;
-  margin-right: 46px;
+  
 transition-property:color; 
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -321,8 +321,8 @@ text-align: center;
   width: 200px;
 height: 50px;
   text-align: center;
-  color: var(--brand-color);
-  background-color: var(--white-color);
+  color: var(--white-color);
+  background-color: var(--light-color);
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -335,12 +335,6 @@ height: 50px;
 transition-property: background-color; color;
 transition-duration: 250ms;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.no-active-blue:hover{
-  color: var(--white-color);
-background-color: var(--light-color);
-
 
 }
 
@@ -545,7 +539,7 @@ padding:0;
  font-weight: 700;
  font-size: 26px;
 padding-top: 60px;
-    
+margin:0;
 
 }
 .light-foot{
@@ -593,7 +587,7 @@ padding-top: 24px;
 .line-one {
 
   display: flex;
- padding-left: 345px;}
+ }
 
 .line-one-nav {
 
@@ -602,6 +596,7 @@ padding-top: 24px;
   padding-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-right:345px;
 }
 
 
@@ -617,7 +612,17 @@ padding-top: 24px;
   
  
 }
+.logo-adress{
+  margin:0;
+  padding-right: 70px;
 
+}
+.mail-tel{
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 60px;
+  margin-top: 9px;
+}
 .join-to-us{
 
   font-weight: 700;
@@ -627,28 +632,28 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
 margin-bottom: 20px;
-padding-top: 72px;
+margin-top: 72px;
 
 }
 .footer-media {
   display: flex;
 gap:10px;
   fill: var(--white-color);
-  
- 
+
+ padding-bottom: 100px;
 }
 
 .block{
- display: flex;
+ 
  background-color: var(--background-color);
- align-content: center;
+
 
 
 }
 
 .right-footer{
 
-padding-left: 171px;
+
 
   
 } 
@@ -656,7 +661,7 @@ padding-left: 171px;
  width: 40px;
     height: 40px;
     display: inline-flex;
-    justify-content: center;
+   justify-content: center;
     align-items: center;
     border-radius: 50%;
   border-radius: 50%;
@@ -678,13 +683,15 @@ cursor: pointer;}
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
- 
+
 }
 
  .prefer-contact{
 display: flex;
 padding-bottom:60px;
-margin:0;
+
+ margin:0;
+ padding: 0;
 
 } 
 
