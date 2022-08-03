@@ -3,7 +3,7 @@
   --light-color: rgba(33, 150, 243, 1);
   --subtitle-color: rgba(117, 117, 117, 1);
   --white-color: rgba(255, 255, 255, 1);
-  --background-color: rgba(47, 48, 58, 1);
+  --background-color: rgba(47, 48, 58, 1); 
   --background-color-button: rgba(245, 244, 250, 1);
   --photo-border: 
   rgba(238, 238, 238, 1);
@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -102,8 +103,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .link-black-two {
   font-family: "Roboto";
   font-weight: 500;
- 
-  color: var(--brand-color);
+  color: var(--light-color);
   text-decoration: none;
   display:flex;
   margin-right: 46px;
@@ -113,13 +113,24 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 }
 .link-black-two:hover,
-.link-black-two:active,
-.link-black-two:focus{
+.link-black-two:active
+{
   color: var(--light-color);
+}
+.link-black-two::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:52px;
+  background: var(--light-color);
+  height: 4px;
+  border-radius: 10px 10px 10px 10px;
+  
 }
 .link-black-seven {
   font-family: "Roboto";
-  color: var(--brand-color);
+  color: var(--light-color);
   text-decoration: none;
   font-weight: 500;
   margin-right: 46px;
@@ -134,7 +145,7 @@ position: relative;
     color: var(--light-color);
 }
 
-.link-black-seven:hover::after{
+.link-black-seven::after{
    content: "";
   position: absolute;
   left: 0;
@@ -143,6 +154,7 @@ position: relative;
   background: var(--light-color);
   height: 4px;
   border-radius: 10px 10px 10px 10px;
+  
 }
 .link-black-seven-index{
    font-family: "Roboto";
@@ -504,7 +516,6 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   opacity:0;
   visibility: hidden;
   pointer-events: none;
-
 }
 
 /* Portfolio i Studio */
@@ -647,8 +658,6 @@ gap:10px;
  
  background-color: var(--background-color);
 
-
-
 }
 
 .right-footer{
@@ -683,17 +692,57 @@ cursor: pointer;}
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-
 }
 
  .prefer-contact{
 display: flex;
 padding-bottom:60px;
-
  margin:0;
  padding: 0;
-
 } 
+
+.save{
+  width: 200px;
+height: 50px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+background-color: var(--light-color);
+color: var(--white-color);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+padding: 10px 28px 10px 42px;
+margin-left: 12px;
+
+}
+.newsletter{
+  display:flex;
+}
+.email{
+  
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+}
+
+.form-email {
+box-sizing: border-box;
+background-color: var(--background-color);
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+display:flex;
+align-items: center;
+padding-left: 15px;
+}
+
+
+
+
 
 /* Only Portfolio */
 
