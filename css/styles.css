@@ -475,6 +475,7 @@ height: 100%;
 background-color: rgba(0, 0, 0, 0.2);
 transition: opacity 250ms ease-in, visibility 250ms linear; 
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -511,13 +512,120 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--white-color);
 background-color: var(--light-color);
 border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 .is-hidden{
   opacity:0;
   visibility: hidden;
   pointer-events: none;
+  
 }
 
+.modal-tittle{
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+bold: 20px;
+}
+
+.form{
+  display:flex;
+  flex-direction: column;
+  
+}
+.form-tittle{
+  font-weight: 400;
+font-size: 12px;
+color: var(--subtitle-color);
+padding-left:40px;
+padding-top:10px;
+padding-bottom: 4px;
+}
+.form-tittle-name{
+   font-weight: 400;
+font-size: 12px;
+color: var(--subtitle-color);
+margin-left:40px;
+padding-bottom: 4px;
+}
+
+.form-group{
+display: flex;
+width: 448px;
+height: 40px;
+box-sizing: border-box;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+
+}
+.form-group-comment{
+ width: 448px;
+height: 120px;
+box-sizing: border-box;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+
+margin-bottom:10px;
+display: flex;
+padding-left: 16px;
+padding-top: 12px;
+color: rgba(117, 117, 117, 0.5);
+font-weight: 400;
+font-size: 12px;
+}
+
+.send{
+  font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+  width: 200px;
+height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 76px 10px 76px;
+  color: var(--white-color);
+  background: var(--light-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border-style: none;
+margin-left:164px;
+cursor: pointer;
+}
+.private-policy{
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color:var(--subtitle-color);
+display: flex;
+justify-content: center;
+position: relative;
+
+}
+.checking{
+   visibility: visible;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+
+.private-policy input{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.modal-checkbox{
+  visibility: hidden;
+}
+.rule{
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+text-decoration: underline;
+color: var(--light-color);
+
+}
 /* Portfolio i Studio */
 
 .link-black-two:hover::after {
@@ -717,7 +825,7 @@ margin-left: 12px;
 cursor: pointer;
 padding: 10px 28px 10px 42px ;
 align-items: center;
-
+border-style: none;
 
 }
 

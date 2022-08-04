@@ -454,14 +454,41 @@
       </div>
 </section>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       
       <div class="modal">
-        <!-- <form>
-        <label Imię>
-          <input type="email" name="email"></input>
-        </label>
-      </form> -->
+        <p class="modal-tittle">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="form">
+<label class="form-tittle-name">
+      Imię
+  
+  <input  class="form-group" type="text" name="username"/>
+    </label>
+    <label class="form-tittle">
+      Telefon
+      <input class="form-group" type="tel" name="phone-number" />
+    </label>
+    <label class="form-tittle">
+      Email
+      <input class="form-group" type="email" name="email" />
+    </label>
+    <label class="form-tittle" > Komentarz
+      <textarea class="form-group-comment"
+name="comment" placeholder="Wprowadź tekst" required minlength="20">
+</textarea></label>
+
+<label class="private-policy">
+   <p >Oświadczam, iż akceptuję <a class="rule"> Regulamin </a> i <a class="rule"> Politykę Prywatności.</p>
+      <input  type="checkbox" name="rule" value="Oświadczam, iż akceptuję Regulamin i Politykę Prywatności."/>
+      <svg width="16" height="15">
+ <use href="./images/symbol-defs.svg#icon-Vector"></use>
+    </label>
+<div>
+  <button class="send" type="submit">Wyślij</button></div>
+          </form>
+       
+
         <button class="close-btn" type="button" data-modal-close>X</button>
       </div>
     </div>
