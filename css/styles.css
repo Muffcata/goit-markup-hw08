@@ -527,27 +527,31 @@ font-size: 20px;
 line-height: 23px;
 text-align: center;
 bold: 20px;
+
 }
 
 .form{
   display:flex;
+  width: 100%;
   flex-direction: column;
   
-}
+} 
 .form-tittle{
   font-weight: 400;
 font-size: 12px;
 color: var(--subtitle-color);
 padding-left:40px;
+/* padding-left:40px;
 padding-top:10px;
-padding-bottom: 4px;
+padding-bottom: 4px; */
 }
+
 .form-tittle-name{
    font-weight: 400;
 font-size: 12px;
 color: var(--subtitle-color);
-margin-left:40px;
-padding-bottom: 4px;
+padding-left:40px;
+
 }
 
 .form-group{
@@ -557,7 +561,7 @@ height: 40px;
 box-sizing: border-box;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-
+position: relative;
 }
 .form-group-comment{
  width: 448px;
@@ -592,6 +596,7 @@ border-style: none;
 margin-left:164px;
 cursor: pointer;
 }
+
 .private-policy{
   font-weight: 400;
 font-size: 14px;
@@ -599,25 +604,54 @@ line-height: 24px;
 color:var(--subtitle-color);
 display: flex;
 justify-content: center;
-position: relative;
+
 
 }
-.checking{
+.modal-email{
+  postition:absolute;
+  top:243px;
+  left:52px;
+
+}
+.modal-phone{
+  postition:absolute;
+  top:172px;
+  left:52px;
+}
+
+.modal-name{
+  postition:absolute;
+  top:104px;
+  left:52px;
+}
+.icons-input{
+  position: relative;
+
+}
+/* .private-policy::before{
+  display: block;
+  content:"";
+  width:16px;
+  height: 16px;
+
+} */
+
+
+/* .checking{
    visibility: visible;
   position: absolute;
-  top: -2px;
-  left: -2px;
-}
+  
+} */
 
 
-.private-policy input{
+/* .private-policy input{
   opacity: 0;
   height: 0;
   width: 0;
 }
 .modal-checkbox{
   visibility: hidden;
-}
+} */
 .rule{
   font-weight: 400;
 font-size: 14px;
