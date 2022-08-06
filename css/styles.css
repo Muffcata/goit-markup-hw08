@@ -620,8 +620,12 @@ font-size: 14px;
 line-height: 24px;
 color:var(--subtitle-color);
 display: block;
+padding-left: 79px;
 
 
+}
+.private-policy p{
+  margin-top: 20px;
 }
 .rule{
   font-weight: 400;
@@ -649,21 +653,22 @@ margin-left:164px;
 cursor: pointer;
 }
 
-
-/* .private-policy::before{
-  display: block;
+.unchecked{
+  position:absolute;
+  top:442px;
+  left:55px;
+}
+.uchecked::before{
+    display: block;
   content:"";
   width:16px;
   height: 16px;
-
-} */
-
-
-/* .checking{
-   visibility: visible;
-  position: absolute;
-  
-} */
+  background-image: url(./images/symbol-defs.svg#icon-icon-check);
+}
+.form-policy{
+   position: relative;
+overflow: hidden;
+}
 
 
 .private-policy input{
@@ -672,10 +677,9 @@ cursor: pointer;
   width: 0;
 }
 
-/* .modal-checkbox{
-  visibility: hidden;
-}  */
+.private-policy:checked + .unchecked:before{
 
+}
 
 
 
