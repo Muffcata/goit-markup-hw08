@@ -572,11 +572,14 @@ padding-top: 4px;
 
 }
 .form-group:focus-within{
-border: 1px solid #2196F3;
+  transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+border: 1px solid var(--light-color);
 border-radius: 4px;
 outline: none;
 
-}
+} 
 
 .form-group-comment{
 
@@ -586,38 +589,48 @@ box-sizing: border-box;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 display: flex;
-
 resize:none;
 
 }
-.modal-name:focus-within{
-  
-  fill: #2196F3;
-} 
 
+.form-group:focus-within + .modal-phone,
+.form-group:focus-within + .modal-name,
+.form-group:focus-within + .modal-email
+{
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+outline: none;
+fill:var(--light-color);
+}
 
-.form-group-comment:focus-within{
-  border: 1px solid #2196F3;
+ .form-group-comment:focus{
+    transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--light-color);
 border-radius: 4px;
 outline: none;
-}
+} 
 .modal-email{
   position:absolute;
   top:243px;
   left:52px;
-
+fill: var(--brand-color);
 }
 
 .modal-phone{
   position:absolute;
   top:176px;
   left:52px;
+  fill: var(--brand-color);
 }
 
 .modal-name{
   position:absolute;
   top:104px;
   left:52px;
+  fill: var(--brand-color);
 }
 textarea::placeholder {
 font-family: "Roboto";
@@ -678,21 +691,22 @@ border-style: none;
 margin-left:164px;
 cursor: pointer;
 }
+
 .unchecked{
-  height: 15px;
-  width: 16px;
-  background-color: var(--white-color);
-  border: 2px solid var(--brand-color);
-  position: absolute;
-  top: 24px;
-  left: 54px;
-  cursor: pointer;
-  border-radius: 2px;
-  
+
+width: 16px;
+height: 15px;
+background-color: var(--white-color);
+ border: 2px solid var(--brand-color);
+position: absolute;
+top: 24px;
+left: 54px;
+cursor: pointer;
+border-radius: 2px;
+
 }
 .private-policy input:checked + .unchecked .checked-in{
-
-border-radius: 2px var(--white-color) ;
+border-radius: 2px var(--white-color);
 visibility: visible;
 position: absolute;
 bottom: -2px;
@@ -702,12 +716,9 @@ right: -2px;
 
 
 .checked-in{
-  
-  visibility: hidden;
 
+visibility: hidden;
 } 
-
-
 
 
 /* Portfolio i Studio */
