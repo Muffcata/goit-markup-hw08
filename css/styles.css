@@ -56,7 +56,7 @@ padding-top:94px;
 
 /* Only Studio */
 
-.social-link {
+.social__link {
   display: flex;
   text-decoration: none;
   font-weight: 500;
@@ -74,13 +74,13 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.social-link:hover{
+.social__link:hover{
  color: var(--light-color);
  fill:var(--light-color);
 }
 
 
-.social-link-five{
+.social__tel{
   color: var(--subtitle-color);
   text-decoration: none;
   font-weight: 500;
@@ -95,12 +95,12 @@ transition-property: color, fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link-five:hover,
-.social-link-five:focus {
+.social__tel:hover,
+.social__tel:focus {
   color: var(--light-color);
   fill:var(--light-color);}
 
-.link-black-two {
+.nav__agency {
   font-family: "Roboto";
   font-weight: 500;
   color: var(--light-color);
@@ -112,12 +112,12 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 }
-.link-black-two:hover,
-.link-black-two:active
+.nav__agency:hover,
+.nav__agency:active
 {
   color: var(--light-color);
 }
-.link-black-two::after{
+.nav__agency::after{
   content: "";
   position: absolute;
   left: 0;
@@ -128,7 +128,7 @@ position: relative;
   border-radius: 10px 10px 10px 10px;
   
 }
-.link-black-seven {
+.nav__portfolio-portfolio {
   font-family: "Roboto";
   color: var(--light-color);
   text-decoration: none;
@@ -139,13 +139,13 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 }
-.link-black-seven:hover,
-.link-black-seven:active,
-.link-black-seven:focus{
+.nav__portfolio-portfolio:hover,
+.nav__portfolio-portfolio:active,
+.nav__portfolio-portfolio:focus{
     color: var(--light-color);
 }
 
-.link-black-seven::after{
+.nav__portfolio-portfolio::after{
    content: "";
   position: absolute;
   left: 0;
@@ -156,7 +156,7 @@ position: relative;
   border-radius: 10px 10px 10px 10px;
   
 }
-.link-black-seven-index{
+.nav__portfolio-agency{
    font-family: "Roboto";
   color: var(--brand-color);
   text-decoration: none;
@@ -166,10 +166,10 @@ position: relative;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-black-seven-index:hover{
+.nav__portfolio-agency:hover{
    color: var(--light-color);
 }
-.link-black-two-portfolio{
+.nav__portfolio{
 font-family: "Roboto";
   font-weight: 500;
  
@@ -181,10 +181,10 @@ transition-property:color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-black-two-portfolio:hover{
+.nav__portfolio:hover{
    color: var(--light-color);
 }
-.link-black-four {
+.nav__contact {
   font-family: "Roboto";
   color: var(--brand-color);
   text-decoration: none;
@@ -195,7 +195,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.link-black-four:hover{
+.nav__contact:hover{
   color: var(--light-color);}
 
 .name {
@@ -318,7 +318,7 @@ rgba(47, 48, 58, 0.4)),url(../images/image\ \(13\).jpg);
 padding-bottom: 94px;
 text-align: center;
 }
-.text {
+.section-middle__header {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -326,7 +326,7 @@ text-align: center;
   margin-bottom: 30px;
     padding-top: 104px;
 }
-.no-active-blue {
+.button__modal {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -741,7 +741,7 @@ right: -2px;
   align-content: center;
 }
 
-.main{
+.page-header{
   display: flex;
   justify-content: center;
 padding:0 15px;
@@ -767,7 +767,7 @@ margin:0;
   color: var(--light-color);
   text-decoration: none;
 }
-.light {
+.logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -779,7 +779,7 @@ padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.light-black {
+.logo__color {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -800,12 +800,12 @@ padding-top: 24px;
 }
 
 
-.line-one {
+.social {
 
   display: flex;
  }
 
-.line-one-nav {
+.nav {
 
   list-style: none;
   display: flex;
@@ -855,19 +855,19 @@ margin-top: 72px;
   display: flex;
 gap:10px;
   fill: var(--white-color);
-
  padding-bottom: 100px;
 }
 
 .block{
  
  background-color: var(--background-color);
-padding: 0 15px;
+
 }
 
 .right-footer{
 
-margin-right: 78px;
+padding-right: 78px;
+
 
   
 } 
@@ -900,7 +900,8 @@ cursor: pointer;}
 }
 
  .prefer-contact{
-display: flex;
+display: inline-flex;
+justify-content: center;
 padding-bottom:60px;
  margin:0;
  padding: 0;
@@ -908,6 +909,8 @@ padding-bottom:60px;
 
 .save{
   display: flex;
+  width: 200px;
+height: 50px;
 line-height: 30px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -918,12 +921,12 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 gap:24px;
-margin-left: 12px;
+
 cursor: pointer;
 padding: 10px 28px 10px 42px ;
 align-items: center;
 border-style: none;
-
+margin:0px
 }
 
 .newsletter{
@@ -948,6 +951,8 @@ border-radius: 4px;
 display:flex;
 align-items: center;
 padding-left: 15px;
+margin-right: 12px;
+
 }
 
 
