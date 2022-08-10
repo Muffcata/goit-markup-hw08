@@ -76,27 +76,29 @@
     <main>
       <section class="section-portfolio">
         <div class="container">
-          <ul class="line-buttons">
-            <li><button class="link" type="button">Wszystkie</button></li>
+          <ul class="buttons">
             <li>
-              <button class="no-active-one" type="button">Strony</button>
+              <button class="buttons__item" type="button">Wszystkie</button>
             </li>
             <li>
-              <button class="no-active-two" type="button">Aplikacje</button>
+              <button class="buttons__item" type="button">Strony</button>
             </li>
             <li>
-              <button class="no-active-three" type="button">Dizajn</button>
+              <button class="buttons__item" type="button">Aplikacje</button>
             </li>
             <li>
-              <button class="no-active-four" type="button">Marketing</button>
+              <button class="buttons__item" type="button">Dizajn</button>
+            </li>
+            <li>
+              <button class="buttons__item" type="button">Marketing</button>
             </li>
           </ul>
         </div>
       </section>
       <section class="section-portfolio-middle">
         <div class="container">
-          <ul class="main-portfolio">
-            <li class="pictures">
+          <ul class="page-middle">
+            <li class="page-middle__image">
               <img
                 src="images/Portolio1.jpg"
                 alt="Technocrack"
@@ -112,10 +114,10 @@
                 </p>
               </div>
 
-              <p class="title">Technocrack</p>
-              <p class="caption-two">Strona internetowa</p>
+              <p class="overlay__title">Technocrack</p>
+              <p class="overlay__caption">Strona internetowa</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img src="images/2.jpg" alt="Dizajn" width="370" height="294" />
               <div class="overlay">
                 <p>
@@ -126,10 +128,10 @@
                 </p>
               </div>
 
-              <p class="title">Grafika New Orlean vs Golden Star</p>
-              <p class="caption-two">Aplikacja</p>
+              <p class="overlay__title">Grafika New Orlean vs Golden Star</p>
+              <p class="overlay__caption">Aplikacja</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img
                 src="images/3.jpg"
                 alt="Aplikacja"
@@ -145,10 +147,10 @@
                 </p>
               </div>
 
-              <p class="title">Restauracja Seafood</p>
-              <p class="caption-two">Aplikacja</p>
+              <p class="overlay__title">Restauracja Seafood</p>
+              <p class="overlay__caption">Aplikacja</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img
                 src="images/4.jpg"
                 alt="Marketing"
@@ -164,10 +166,10 @@
                 </p>
               </div>
 
-              <p class="title">Projekt Prime</p>
-              <p class="caption-two">Marketing</p>
+              <p class="overlay__title">Projekt Prime</p>
+              <p class="overlay__caption">Marketing</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img
                 src="images/5.jpg"
                 alt="Aplikacja 2"
@@ -182,10 +184,10 @@
                   serwery konkurencji
                 </p>
               </div>
-              <p class="title">Projekt Boxes</p>
-              <p class="caption-two">Aplikacja</p>
+              <p class="overlay__title">Projekt Boxes</p>
+              <p class="overlay__caption">Aplikacja</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img
                 src="images/6.jpg"
                 alt="Strona internetowa"
@@ -201,10 +203,10 @@
                 </p>
               </div>
 
-              <p class="title">Inspiration has no Borders</p>
-              <p class="caption-two">Strona internetowa</p>
+              <p class="overlay__title">Inspiration has no Borders</p>
+              <p class="overlay__caption">Strona internetowa</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img src="images/7.jpg" alt="Dizajn 2" width="370" height="294" />
               <div class="overlay">
                 <p>
@@ -214,10 +216,10 @@
                   serwery konkurencji
                 </p>
               </div>
-              <p class="title">Magazyn Limited Edition</p>
-              <p class="caption-two">Dizajn</p>
+              <p class="overlay__title">Magazyn Limited Edition</p>
+              <p class="overlay__caption">Dizajn</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img
                 src="images/8.jpg"
                 alt="Marketing 2"
@@ -232,10 +234,10 @@
                   serwery konkurencji
                 </p>
               </div>
-              <p class="title">Projekt LAB</p>
-              <p class="caption-two">Marketing</p>
+              <p class="overlay__title">Projekt LAB</p>
+              <p class="overlay__caption">Marketing</p>
             </li>
-            <li class="pictures">
+            <li class="page-middle__image">
               <img
                 src="images/9.jpg"
                 alt="Aplikacja 2"
@@ -250,63 +252,65 @@
                   serwery konkurencji
                 </p>
               </div>
-              <p class="title">Growing Business</p>
-              <p class="caption-two">Aplikacja</p>
+              <p class="overlay__title">Growing Business</p>
+              <p class="overlay__caption">Aplikacja</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
-      <section class="block">
-        <div class="container block">
-          <div class="prefer-contact">
-            <ul class="logo-adress">
+      <section class="section-footer">
+        <div class="container">
+          <div class="footer">
+            <ul class="footer__address">
               <li>
-                <a class="logo-footer">
-                  <span class="light-foot">Web</span
-                  ><span class="logo-dark">Studio</span>
+                <a class="footer-logo">
+                  <span class="footer-logo__web">Web</span
+                  ><span class="footer-logo__studio">Studio</span>
                 </a>
               </li>
 
               <li>
-                <address class="text-adress">
+                <address class="address">
                   m. Warszawa, Aleje Jerozolimskie 21
                 </address>
               </li>
-              <ul class="mail-tel">
+              <ul class="footer-contacts">
                 <li>
-                  <a class="social-link-three" href="mailto:info@example.com"
+                  <a
+                    class="footer-contacts__mail"
+                    href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
                 <li>
-                  <a class="social-link-nine" href="tel: +48 111 111 111"
+                  <a class="footer-contacts__link" href="tel: +48 111 111 111"
                     >+48 111 111 111</a
                   >
                 </li>
               </ul>
             </ul>
-            <div class="right-footer">
-              <p class="join-to-us">DOŁĄCZ DO NAS</p>
+            <div class="middle-footer">
+              <p class="middle-footer__header">DOŁĄCZ DO NAS</p>
 
               <ul class="footer-media">
-                <li class="socialmedia-link">
+                <li class="footer-media__link">
                   <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </li>
-                <li class="socialmedia-link">
+                <li class="footer-media__link">
                   <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </li>
-                <li class="socialmedia-link">
+                <li class="footer-media__link">
                   <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </li>
-                <li class="socialmedia-link">
+                <li class="footer-media__link">
                   <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin2"></use>
                   </svg>
@@ -314,13 +318,13 @@
               </ul>
             </div>
             <div>
-              <p class="join-to-us">zapisz się do newslettera</p>
+              <p class="middle-footer__header">zapisz się do newslettera</p>
               <form class="newsletter">
                 <label EMAIL>
-                  <input class="form-email" type="email" name="email" />
+                  <input class="newsletter__email" type="email" name="email" />
                 </label>
                 <div>
-                  <button class="save" type="submit">
+                  <button class="button btn-save" type="submit">
                     Zapisz się
                     <svg width="24" height="24">
                       <use href="./images/symbol-defs.svg#icon-icon-send"></use>
