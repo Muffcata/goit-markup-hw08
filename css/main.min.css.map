@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../saas/main.scss"
+  ],
+  "names": [],
+  "mappings": "AAAQ",
+  "file": "main.min.css"
+}
