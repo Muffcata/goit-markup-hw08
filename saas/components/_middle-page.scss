@@ -1,0 +1,48 @@
+@mixin transition {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-middle {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url/images/image\\13\.jpg;
+  background-size: 1600px;
+  height: 600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+  &__title {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 104px;
+  }
+}
+
+.button {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--light-color);
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.btn-modal {
+  padding-left: 42px;
+  padding-right: 41px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include transition;
+  cursor: pointer;
+}

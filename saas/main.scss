@@ -1,1 +1,15 @@
-@import url(./base/_common.scss);
+@import "./base/common";
+@import "./utils/variables";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/right-header";
+@import "./components/middle-page";
+@import "./components/lorem_ipsum";
+@import "./components/work-page";
+@import "./components/team-page";
+@import "./components/clients-page";
+@import "./components/modalView";
+@import "./components/footer-page";
+@import "./components/form-footer";
+@import "./pages/portfolio";

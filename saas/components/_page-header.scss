@@ -1,0 +1,13 @@
+.section-header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: flex;
+  align-content: center;
+  list-style: none;
+}
+
+.page-header {
+  @extend .section-header;
+  padding: 0 15px;
+  margin: 0;
+}

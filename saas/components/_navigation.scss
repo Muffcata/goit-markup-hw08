@@ -1,0 +1,91 @@
+@mixin transition {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  padding-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 345px;
+}
+
+.nav__agency {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: var(--light-color);
+  text-decoration: none;
+  display: flex;
+  margin-right: 46px;
+  @include transition;
+  position: relative;
+
+  &:hover {
+    color: var(--light-color);
+  }
+
+  &:active {
+    color: var(--light-color);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 52px;
+    background: var(--light-color);
+    height: 4px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+.nav__portfolio-portfolio {
+  font-family: "Roboto";
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 46px;
+  @include transition;
+  position: relative;
+
+  &:hover {
+    color: var(--light-color);
+  }
+  &:active {
+    color: var(--light-color);
+  }
+  &:focus {
+    color: var(--light-color);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 52px;
+    background: var(--light-color);
+    height: 4px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+.nav__portfolio-agency {
+  font-family: "Roboto";
+  color: var(--brand-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 46px;
+  @include transition;
+  &:hover {
+    color: var(--light-color);
+  }
+}
+.nav__portfolio {
+  @extend .nav__portfolio-agency;
+}
+.nav__contact {
+  @extend .nav__portfolio-agency;
+}

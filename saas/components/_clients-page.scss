@@ -1,0 +1,40 @@
+@mixin transition {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section__clients-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.clients {
+  justify-content: center;
+  margin-top: 47px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.clients__img {
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--clients);
+  @include transition;
+  &:hover {
+    fill: var(--light-color);
+    border-color: var(--light-color);
+    cursor: pointer;
+  }
+  &:focus {
+    fill: var(--light-color);
+    border-color: var(--light-color);
+    cursor: pointer;
+  }
+}

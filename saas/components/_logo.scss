@@ -1,0 +1,34 @@
+@mixin logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.logo {
+  @include logo;
+  line-height: 31px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  &__color {
+    color: var(--brand-color);
+  }
+}
+.footer-logo {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  padding-top: 60px;
+  margin: 0;
+}
+.footer-logo__web {
+  @include logo;
+  line-height: 31px;
+}
+.footer-logo__studio {
+  @include logo;
+  color: var(--white-color);
+}

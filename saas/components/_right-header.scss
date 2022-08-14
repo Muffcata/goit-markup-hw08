@@ -1,0 +1,49 @@
+@mixin transition {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social {
+  display: flex;
+}
+.social__link {
+  @extend .social;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--subtitle-color);
+  cursor: pointer;
+  padding-right: 30px;
+  padding-top: 33px;
+  padding-bottom: 32px;
+  gap: 10px;
+  align-items: center;
+  line-height: 1;
+  @include transition;
+  &:hover {
+    color: var(--light-color);
+    fill: var(--light-color);
+  }
+}
+.social__tel {
+  @extend .social;
+  color: var(--subtitle-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 33px;
+  padding-bottom: 32px;
+  gap: 10px;
+  align-items: center;
+  line-height: 1;
+  @include transition;
+  &:hover {
+    color: var(--light-color);
+    fill: var(--light-color);
+  }
+  &:focus {
+    color: var(--light-color);
+    fill: var(--light-color);
+  }
+}
