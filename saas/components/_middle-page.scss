@@ -4,25 +4,26 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.head-box__title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 104px;
+}
+
 .section-middle {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/image\\13\.jpg);
-  width: max-content;
+    url(../images/middle-background.jpg);
+  max-width: 1600px;
   height: 600px;
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
-  &__title {
-    color: var(--white-color);
-    font-weight: 900;
-    font-size: 44px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    padding-top: 104px;
-  }
 }
 
 .button {

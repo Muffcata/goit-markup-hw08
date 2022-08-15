@@ -8,7 +8,7 @@
   display: flex;
 }
 .social__link {
-  @extend .social;
+  display: flex;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -16,7 +16,7 @@
   cursor: pointer;
   padding-right: 30px;
   padding-top: 33px;
-  padding-bottom: 32px;
+
   gap: 10px;
   align-items: center;
   line-height: 1;
@@ -27,13 +27,13 @@
   }
 }
 .social__tel {
-  @extend .social;
+  display: flex;
   color: var(--subtitle-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   padding-top: 33px;
-  padding-bottom: 32px;
+
   gap: 10px;
   align-items: center;
   line-height: 1;

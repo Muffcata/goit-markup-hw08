@@ -9,8 +9,7 @@
   display: flex;
   padding-left: 93px;
   padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 345px;
+  padding-right: 353px;
 }
 
 .nav__agency {
@@ -36,7 +35,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 52px;
+    top: 45px;
     background: var(--light-color);
     height: 4px;
     border-radius: 10px 10px 10px 10px;
@@ -66,7 +65,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 52px;
+    top: 42px;
     background: var(--light-color);
     height: 4px;
     border-radius: 10px 10px 10px 10px;
@@ -84,8 +83,19 @@
   }
 }
 .nav__portfolio {
-  @extend .nav__portfolio-agency;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: var(--brand-color);
+  text-decoration: none;
+  display: flex;
+  margin-right: 46px;
+  transition-property: color;
+  @include transition;
 }
 .nav__contact {
-  @extend .nav__portfolio-agency;
+  font-family: "Roboto";
+  color: var(--brand-color);
+  text-decoration: none;
+  font-weight: 500;
+  @include transition;
 }
