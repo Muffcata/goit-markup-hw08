@@ -242,8 +242,8 @@ ul {
 }
 
 .section-middle {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url/images/image\\13\.jpg;
-  background-size: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/image\\13\.jpg);
+  width: max-content;
   height: 600px;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -826,7 +826,7 @@ input {
 .newsletter {
   display: flex;
 }
-.newsletter____email {
+.newsletter__email {
   box-sizing: border-box;
   background-color: var(--background-color);
   width: 358px;
