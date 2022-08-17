@@ -54,11 +54,19 @@ ul {
   --work-team-photo: rgba(47, 48, 58, 0.8);
 }
 
-.section-main {
-  border-bottom: 1px solid #ececec;
+*,
+*::after *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.section-header {
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   align-content: center;
@@ -273,7 +281,7 @@ ul {
   fill: var(--light-color);
 }
 
-.head-box__title {
+.central-box__title {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -282,7 +290,7 @@ ul {
   padding-top: 104px;
 }
 
-.section-middle {
+.central-box {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/middle-background.jpg);
   max-width: 1600px;
   height: 600px;
@@ -359,10 +367,10 @@ ul {
   text-align: left;
 }
 
-.section-work {
+.work {
   padding-bottom: 94px;
 }
-.section-work__title {
+.work__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -370,14 +378,14 @@ ul {
   margin-top: 94px;
 }
 
-.section-work__item {
+.work__item {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   margin: 0 auto;
 }
-.section-work__item ul {
+.work__item ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -386,17 +394,17 @@ ul {
   margin-top: 47px;
 }
 
-.section-work__img {
+.work__img {
   position: relative;
   overflow: visible;
 }
-.section-work__img img {
+.work__img img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.section-work__label {
+.work__label {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -413,26 +421,26 @@ ul {
   margin: 0;
 }
 
-.section-team {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   display: flex;
   justify-content: center;
   background-color: var(--background-color-button);
 }
-.section-team__header {
+.team__header {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
 }
-.section-team__item {
+.team__item {
   display: flex;
   gap: 30px;
   margin: 0;
   padding: 0;
 }
 
-.section-team__image {
+.team__image {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-top: 47px;
@@ -505,7 +513,7 @@ figure {
   fill: var(--white-color);
 }
 
-.section__clients-header {
+.clients-header {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -771,7 +779,7 @@ input {
   pointer-events: none;
 }
 
-.section-footer {
+.page-footer {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -885,7 +893,11 @@ input {
   line-height: 30px;
 }
 
-.section-portfolio {
+.main {
+  border-bottom: 1px solid #ececec;
+}
+
+.portfolio {
   padding-top: 94px;
   margin: 0;
 }
@@ -918,7 +930,7 @@ input {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.section-portfolio-middle {
+.portfolio-middle {
   padding-top: 34px;
   padding-bottom: 94px;
   display: flex;

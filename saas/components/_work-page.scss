@@ -1,4 +1,4 @@
-.section-work {
+.work {
   padding-bottom: 94px;
   &__title {
     text-align: center;
@@ -8,7 +8,7 @@
     margin-top: 94px;
   }
 }
-.section-work__item {
+.work__item {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@
     margin-top: 47px;
   }
 }
-.section-work__img {
+.work__img {
   position: relative;
   overflow: visible;
   & img {
@@ -32,7 +32,7 @@
     height: auto;
   }
 }
-.section-work__label {
+.work__label {
   position: absolute;
   bottom: 0;
   right: 0;

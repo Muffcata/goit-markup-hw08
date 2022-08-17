@@ -4,7 +4,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.head-box__title {
+.central-box__title {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -13,7 +13,7 @@
   padding-top: 104px;
 }
 
-.section-middle {
+.central-box {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
