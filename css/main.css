@@ -524,7 +524,6 @@ figure {
   margin-top: 47px;
   list-style: none;
   display: flex;
-  gap: 30px;
 }
 
 .clients__img {
@@ -536,6 +535,7 @@ figure {
   align-items: center;
   justify-content: center;
   fill: var(--clients);
+  margin-right: 30px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
