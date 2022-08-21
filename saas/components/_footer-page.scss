@@ -6,19 +6,12 @@
 
 .page-footer {
   background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 .footer {
   display: flex;
-  justify-content: center;
-  padding-bottom: 60px;
-  margin: 0;
-  padding: 0;
+
   &__address {
-    padding-right: 70px;
+    padding-right: 84px;
   }
 }
 .address {
@@ -43,7 +36,7 @@
   }
 }
 .middle-footer {
-  padding-right: 78px;
+  padding-right: 85px;
   &__header {
     font-weight: 700;
     font-size: 14px;
@@ -51,7 +44,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-    margin-bottom: 20px;
+
     margin-top: 72px;
   }
 }

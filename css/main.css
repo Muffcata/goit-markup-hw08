@@ -34,6 +34,7 @@ ul {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -244,7 +245,7 @@ ul {
   font-size: 14px;
   color: var(--subtitle-color);
   cursor: pointer;
-  padding-right: 50px;
+  padding-right: 29px;
   padding-top: 33px;
   gap: 10px;
   align-items: center;
@@ -341,6 +342,7 @@ ul {
   letter-spacing: 0.03em;
   padding: 0;
   margin: 0;
+  flex-grow: 1;
 }
 
 .card__icon {
@@ -380,23 +382,21 @@ ul {
 
 .work__item {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
   margin: 0 auto;
 }
-.work__item ul {
+
+.work__list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
   padding: 0;
   margin-top: 47px;
+  gap: 30px;
 }
 
 .work__img {
   position: relative;
   overflow: visible;
+  flex-grow: 1;
 }
 .work__img img {
   display: block;
@@ -445,6 +445,8 @@ ul {
   border-radius: 0px 0px 4px 4px;
   margin-top: 47px;
   background-color: var(--white-color);
+  display: flex;
+  flex-grow: 1;
 }
 
 .name {
@@ -524,6 +526,7 @@ figure {
   margin-top: 47px;
   list-style: none;
   display: flex;
+  gap: 30px;
 }
 
 .clients__img {
@@ -535,7 +538,7 @@ figure {
   align-items: center;
   justify-content: center;
   fill: var(--clients);
-  margin-right: 30px;
+  flex-grow: 1;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -781,21 +784,13 @@ input {
 
 .page-footer {
   background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .footer {
   display: flex;
-  justify-content: center;
-  padding-bottom: 60px;
-  margin: 0;
-  padding: 0;
 }
 .footer__address {
-  padding-right: 70px;
+  padding-right: 84px;
 }
 
 .address {
@@ -822,7 +817,7 @@ input {
 }
 
 .middle-footer {
-  padding-right: 78px;
+  padding-right: 85px;
 }
 .middle-footer__header {
   font-weight: 700;
@@ -831,7 +826,6 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 20px;
   margin-top: 72px;
 }
 

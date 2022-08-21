@@ -15,6 +15,7 @@
   margin-top: 47px;
   list-style: none;
   display: flex;
+  gap: 30px;
 }
 .clients__img {
   width: 170px;
@@ -25,7 +26,7 @@
   align-items: center;
   justify-content: center;
   fill: var(--clients);
-  margin-right: 30px;
+  flex-grow: 1;
   @include transition;
   &:hover {
     fill: var(--light-color);
