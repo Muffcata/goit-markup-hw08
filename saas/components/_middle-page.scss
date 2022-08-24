@@ -1,10 +1,16 @@
+@mixin transition {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .central-box {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/responsive/Background-mobile.jpg");
-
+    url("../images/responsive/Header-mobile.jpg");
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   background-size: 480px 400px;
@@ -34,6 +40,14 @@
   margin-bottom: 111px;
   opacity: 0.75;
 }
+.btn-modal {
+  padding-left: 42px;
+  padding-right: 41px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include transition;
+  cursor: pointer;
+}
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 768px) {
@@ -42,7 +56,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/responsive/Header\ img\ @2x.jpg");
+      url("../images/responsive/Header-mobile@2x.jpg");
   }
 }
 
@@ -111,20 +125,6 @@
       ),
       url("../images/responsive/bg-desktop@x2.jpg");
   }
-}
-
-@mixin transition {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-modal {
-  padding-left: 42px;
-  padding-right: 41px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  @include transition;
-  cursor: pointer;
 }
 
 /*

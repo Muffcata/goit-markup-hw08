@@ -6,6 +6,8 @@
 
 .team {
   padding-top: 60px;
+  padding-bottom: 60px;
+  display: block;
 
   justify-content: center;
   background-color: var(--background-color-button);
@@ -25,7 +27,7 @@
   border-radius: 0px 0px 4px 4px;
   margin-top: 47px;
   background-color: var(--white-color);
-  display: flex;
+
   flex-grow: 1;
 }
 
@@ -55,6 +57,7 @@ figure {
   align-items: center;
   justify-content: center;
   width: 206px;
+  padding-bottom: 24px;
 
   &__item {
     width: 40px;
