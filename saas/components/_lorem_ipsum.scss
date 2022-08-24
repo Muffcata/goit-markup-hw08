@@ -1,4 +1,43 @@
 .card {
+  justify-content: center;
+  padding-top: 60px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 30px;
+}
+
+.card__item {
+  font-weight: 400px;
+  font-size: 14px;
+  width: 450px;
+  height: 226px;
+  letter-spacing: 0.03em;
+  flex-grow: 1;
+}
+.card__icon {
+  width: 450px;
+  height: 120px;
+  background: var(--background-color-button);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 14px;
+}
+.card__caption {
+  color: var(--subtitle-color);
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 14px;
+  text-align: center;
+}
+.card__img {
+  padding-top: 25px;
+  margin-left: 190px;
+}
+/*.card {
   flex-wrap: wrap;
   display: flex;
   gap: 30px;
@@ -37,3 +76,4 @@
   font-size: 14px;
   text-align: left;
 }
+*/

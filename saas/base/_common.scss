@@ -28,12 +28,49 @@ body {
 ul {
   list-style: none;
 }
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 320px;
+    max-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 320px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+/*
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+*/
