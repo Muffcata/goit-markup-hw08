@@ -34,7 +34,7 @@ ul {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -59,7 +59,6 @@ ul {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    padding: 0;
   }
 }
 /*
@@ -755,16 +754,13 @@ figure {
 }
 
 .socialmedia {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   width: 206px;
-  padding-top: 16px;
-  padding-bottom: 18px;
 }
 .socialmedia__item {
   width: 40px;
