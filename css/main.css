@@ -39,7 +39,6 @@ ul {
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 320px;
     max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
@@ -578,7 +577,6 @@ ul {
   padding-top: 60px;
   flex-wrap: wrap;
   flex-direction: column;
-  column-gap: 30px;
 }
 
 .card__item {
@@ -588,6 +586,7 @@ ul {
   height: 226px;
   letter-spacing: 0.03em;
   flex-grow: 1;
+  margin-bottom: 30px;
 }
 
 .card__icon {
@@ -602,6 +601,8 @@ ul {
 .card__title {
   font-weight: 700;
   font-size: 14px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .card__caption {
@@ -609,11 +610,11 @@ ul {
   font-weight: 400;
   line-height: 1.7;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
 }
 
 .card__img {
-  padding-top: 25px;
+  margin-top: 25px;
   margin-left: 190px;
 }
 
@@ -658,21 +659,24 @@ ul {
 }
 */
 .work {
-  padding-bottom: 94px;
-}
-.work__title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  padding-top: 94px;
-  margin-top: 94px;
+  display: none;
 }
 
+/*
+.work {
+  padding-bottom: 94px;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 94px;
+    margin-top: 94px;
+  }
+}
 .work__item {
   display: flex;
   margin: 0 auto;
 }
-
 .work__list {
   display: flex;
   justify-content: center;
@@ -680,18 +684,16 @@ ul {
   margin-top: 47px;
   gap: 30px;
 }
-
 .work__img {
   position: relative;
   overflow: visible;
   flex-grow: 1;
+  & img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
-.work__img img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .work__label {
   position: absolute;
   bottom: 0;
@@ -708,24 +710,20 @@ ul {
   text-transform: uppercase;
   margin: 0;
 }
-
+*/
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  display: flex;
+  padding-top: 60px;
   justify-content: center;
   background-color: var(--background-color-button);
 }
 .team__header {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
 }
 .team__item {
-  display: flex;
   gap: 30px;
   margin: 0;
-  padding: 0;
 }
 
 .team__image {
@@ -803,6 +801,96 @@ figure {
   fill: var(--white-color);
 }
 
+/*
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color-button);
+  &__header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  &__item {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.team__image {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-top: 47px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-grow: 1;
+}
+.name {
+  color: var(--brand-color);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  &__caption {
+    color: var(--subtitle-color);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-transform: none;
+    margin-top: 10px;
+  }
+}
+figure {
+  margin: 0;
+}
+
+.socialmedia {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 206px;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  &__item {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--clients);
+  }
+}
+.socialmedia__img {
+  display: inline-flex;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--clients);
+  cursor: pointer;
+  @include transition;
+  &:hover {
+    background-color: var(--light-color);
+    fill: var(--white-color);
+  }
+  &:focus {
+    background-color: var(--light-color);
+    fill: var(--white-color);
+  }
+  &:active {
+    background-color: var(--light-color);
+    fill: var(--white-color);
+  }
+}
+*/
 .clients-header {
   text-align: center;
   font-weight: 700;
