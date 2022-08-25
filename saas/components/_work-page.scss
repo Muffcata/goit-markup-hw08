@@ -1,7 +1,5 @@
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .work {
-    display: none;
-  }
+.work {
+  display: none;
 }
 
 /*TABLET*/
@@ -11,6 +9,8 @@
     display: none;
   }
 }
+
+/*Desktop*/
 
 @media screen and (min-width: 1200px) {
   .work {

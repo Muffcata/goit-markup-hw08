@@ -47,8 +47,9 @@
   margin-left: 83px;
   margin-top: 21px;
 }
+/*TABLET*/
 
-@media screen and (min-width: 768px) and (max-width: 10199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients {
     justify-content: center;
     padding-top: 47px;
@@ -60,40 +61,45 @@
   }
 }
 
-/*
-.clients-header {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-}
+/*DESKTOP*/
 
-.clients {
-  justify-content: center;
-  margin-top: 47px;
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-.clients__img {
-  width: 170px;
-  height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: var(--clients);
-  flex-grow: 1;
-  @include transition;
-  &:hover {
-    fill: var(--light-color);
-    border-color: var(--light-color);
-    cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .clients-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
   }
-  &:focus {
-    fill: var(--light-color);
-    border-color: var(--light-color);
-    cursor: pointer;
+
+  .clients {
+    justify-content: center;
+    margin-top: 47px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  .clients__img {
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--clients);
+    flex-grow: 1;
+    @include transition;
+    &:hover {
+      fill: var(--light-color);
+      border-color: var(--light-color);
+      cursor: pointer;
+    }
+    &:focus {
+      fill: var(--light-color);
+      border-color: var(--light-color);
+      cursor: pointer;
+    }
+  }
+  .clients__img-img {
+    margin: 17px 14px 17px 32px;
   }
 }
-*/
