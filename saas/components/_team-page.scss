@@ -92,6 +92,98 @@ figure {
   }
 }
 
+/*TABLET*/
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: block;
+
+    justify-content: center;
+    background-color: var(--background-color-button);
+    &__header {
+      text-align: center;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    &__item {
+      gap: 30px;
+      margin: 0;
+    }
+  }
+  .team__image {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 47px;
+    background-color: var(--white-color);
+
+    flex-grow: 1;
+  }
+
+  .name {
+    color: var(--brand-color);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    &__caption {
+      color: var(--subtitle-color);
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      text-transform: none;
+      margin-top: 10px;
+    }
+  }
+  figure {
+    margin: 0;
+  }
+
+  .socialmedia {
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    padding-bottom: 24px;
+
+    &__item {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      fill: var(--clients);
+    }
+  }
+  .socialmedia__img {
+    display: inline-flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--clients);
+    cursor: pointer;
+    @include transition;
+    &:hover {
+      background-color: var(--light-color);
+      fill: var(--white-color);
+    }
+    &:focus {
+      background-color: var(--light-color);
+      fill: var(--white-color);
+    }
+    &:active {
+      background-color: var(--light-color);
+      fill: var(--white-color);
+    }
+  }
+}
+
 /*
 .team {
   padding-top: 94px;

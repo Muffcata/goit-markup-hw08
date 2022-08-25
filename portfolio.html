@@ -2,9 +2,9 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -23,14 +23,32 @@
   </head>
   <body>
     <header>
-      <section class="main">
+      <section class="header main">
         <div class="container">
-          <div class="page-header">
+          <div class="page-header ">
             <a class="logo" href="index.html"
               ><span>Web</span><span class="logo__color">Studio</span></a
             >
-
-            <nav>
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <!-- <nav>
               <ul class="nav">
                 <li>
                   <a class="nav__portfolio-agency" href="index.html"
@@ -44,9 +62,10 @@
                 </li>
                 <li><a class="nav__contact" href="Kontakt">Kontakt</a></li>
               </ul>
-            </nav>
-            <div>
-              <ul class="social">
+            </nav> -->
+          </div>
+              
+             <!-- <ul class="social">
                 <li>
                   <a class="social__link" href="mailto:info@devstudio.com"
                     ><svg width="16" height="12">
@@ -67,14 +86,15 @@
                     +48 111 111 111</a
                   >
                 </li>
-              </ul>
-            </div>
+              </ul> </div> -->
+            
           </div>
+        
         </div>
       </section>
     </header>
 
-    <main>
+     <main>
       <section class="portfolio">
         <div class="container">
           <ul class="buttons">
@@ -108,7 +128,7 @@
               <img
                 src="images/Portolio1.jpg"
                 alt="Technocrack"
-                width="370"
+                width="450"
                 height="294"
               />
 
@@ -116,7 +136,7 @@
               <p class="overlay__caption">Strona internetowa</p>
             </li>
             <li class="page-middle__image">
-              <img src="images/2.jpg" alt="Dizajn" width="370" height="294" />
+              <img src="images/2.jpg" alt="Dizajn" width="450" height="294" />
               <div class="overlay">
                 <p>
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -133,7 +153,7 @@
               <img
                 src="images/3.jpg"
                 alt="Aplikacja"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="overlay">
@@ -152,7 +172,7 @@
               <img
                 src="images/4.jpg"
                 alt="Marketing"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="overlay">
@@ -171,7 +191,7 @@
               <img
                 src="images/5.jpg"
                 alt="Aplikacja 2"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="overlay">
@@ -189,7 +209,7 @@
               <img
                 src="images/6.jpg"
                 alt="Strona internetowa"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="overlay">
@@ -221,7 +241,7 @@
               <img
                 src="images/8.jpg"
                 alt="Marketing 2"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="overlay">
@@ -239,7 +259,7 @@
               <img
                 src="images/9.jpg"
                 alt="Aplikacja 2"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="overlay">
@@ -258,7 +278,7 @@
         </div>
       </div>
       </section>
-    </main>
+    </main> 
     <footer>
       <section class="page-footer">
         <div class="container">
@@ -323,7 +343,7 @@
                 <label EMAIL>
                   <input class="newsletter__email" type="email" name="email" />
                 </label>
-                <div>
+                <div class="checkbox__button">
                   <button class="button btn-save" type="submit">
                     Zapisz się
                     <svg width="24" height="24">
@@ -337,5 +357,11 @@
         </div>
       </section>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

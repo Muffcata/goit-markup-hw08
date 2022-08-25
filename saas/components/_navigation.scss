@@ -5,6 +5,78 @@
 }
 
 .nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    list-style: none;
+    display: flex;
+    padding-left: 83px;
+    padding-top: 32px;
+    padding-right: 101px;
+  }
+  .nav__agency {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: var(--light-color);
+    text-decoration: none;
+    display: flex;
+    margin-right: 60px;
+    @include transition;
+    position: relative;
+    font-size: 14px;
+
+    &:hover {
+      color: var(--light-color);
+    }
+
+    &:active {
+      color: var(--light-color);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 34px;
+      background: var(--light-color);
+      height: 4px;
+      border-radius: 10px 10px 10px 10px;
+    }
+  }
+
+  .nav__portfolio {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--brand-color);
+    text-decoration: none;
+    display: flex;
+    margin-right: 60px;
+    transition-property: color;
+    @include transition;
+    &:hover {
+      color: var(--light-color);
+    }
+  }
+  .nav__contact {
+    font-family: "Roboto";
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    font-size: 14px;
+    @include transition;
+    &:hover {
+      color: var(--light-color);
+    }
+  }
+}
+
+/*
+.nav {
   list-style: none;
   display: flex;
   padding-left: 93px;
@@ -105,3 +177,4 @@
     color: var(--light-color);
   }
 }
+*/

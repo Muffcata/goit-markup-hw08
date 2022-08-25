@@ -33,6 +33,15 @@
   padding-left: 42px;
 }
 
+/*TABLET*/
+
+@media screen and (min-width: 768px) {
+  .newsletter__email {
+    display: flex;
+    justify-content: center;
+    margin-left: 166px;
+  }
+}
 /*
 
 .newsletter {
