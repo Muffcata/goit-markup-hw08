@@ -9,6 +9,7 @@
   padding-bottom: 60px;
   display: block;
 
+  display: flex;
   justify-content: center;
   background-color: var(--background-color-button);
   &__header {
@@ -94,13 +95,17 @@ figure {
 
 /*TABLET*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
     display: block;
-
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+
     background-color: var(--background-color-button);
     &__header {
       text-align: center;

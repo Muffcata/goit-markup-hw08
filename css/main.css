@@ -625,10 +625,9 @@ ul {
 */
 .central-box {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/responsive/Header-mobile.jpg");
-  width: 100%;
   text-align: center;
   margin: 0 auto;
-  background-size: 480px 400px;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -681,12 +680,12 @@ ul {
       url("../images/responsive/Header-mobile@2x.jpg");
   }
 }*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 10199px) {
   .central-box {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/responsive/header-tablet.jpg");
     text-align: center;
     margin: 0 auto;
-    background-size: 768px 400px;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
   .button {
@@ -813,7 +812,14 @@ ul {
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+  }
   .card__item {
     width: 354px;
     height: 251px;
@@ -932,6 +938,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   display: block;
+  display: flex;
   justify-content: center;
   background-color: var(--background-color-button);
 }
@@ -1018,12 +1025,16 @@ figure {
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
     display: block;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
     background-color: var(--background-color-button);
   }
   .team__header {
@@ -1205,6 +1216,9 @@ figure {
   list-style: none;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
 }
 
 .clients__img {
@@ -1236,6 +1250,17 @@ figure {
   margin-top: 21px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 10199px) {
+  .clients {
+    justify-content: center;
+    padding-top: 47px;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+  }
+}
 /*
 .clients-header {
   text-align: center;
@@ -1987,6 +2012,11 @@ input {
 
 .buttons {
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  gap: 8px;
 }
 
 .buttons__item {
