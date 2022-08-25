@@ -8,7 +8,7 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
     list-style: none;
     display: flex;
@@ -75,106 +75,108 @@
   }
 }
 
-/*
-.nav {
-  list-style: none;
-  display: flex;
-  padding-left: 93px;
-  padding-top: 32px;
-  padding-right: 353px;
-}
+/*DESKTOP*/
 
-.nav__agency {
-  font-family: "Roboto";
-  font-weight: 500;
-  color: var(--light-color);
-  text-decoration: none;
-  display: flex;
-  margin-right: 46px;
-  @include transition;
-  position: relative;
-
-  &:hover {
-    color: var(--light-color);
+@media screen and (min-width: 1200px) {
+  .nav {
+    list-style: none;
+    display: flex;
+    padding-left: 93px;
+    padding-top: 32px;
+    padding-right: 353px;
   }
 
-  &:active {
+  .nav__agency {
+    font-family: "Roboto";
+    font-weight: 500;
     color: var(--light-color);
+    text-decoration: none;
+    display: flex;
+    margin-right: 46px;
+    @include transition;
+    position: relative;
+
+    &:hover {
+      color: var(--light-color);
+    }
+
+    &:active {
+      color: var(--light-color);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 45px;
+      background: var(--light-color);
+      height: 4px;
+      border-radius: 10px 10px 10px 10px;
+    }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 45px;
-    background: var(--light-color);
-    height: 4px;
-    border-radius: 10px 10px 10px 10px;
-  }
-}
+  .nav__portfolio-portfolio {
+    font-family: "Roboto";
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 46px;
+    @include transition;
+    position: relative;
 
-.nav__portfolio-portfolio {
-  font-family: "Roboto";
-  color: var(--light-color);
-  text-decoration: none;
-  font-weight: 500;
-  margin-right: 46px;
-  @include transition;
-  position: relative;
-
-  &:hover {
-    color: var(--light-color);
+    &:hover {
+      color: var(--light-color);
+    }
+    &:active {
+      color: var(--light-color);
+    }
+    &:focus {
+      color: var(--light-color);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 42px;
+      background: var(--light-color);
+      height: 4px;
+      border-radius: 10px 10px 10px 10px;
+    }
   }
-  &:active {
-    color: var(--light-color);
+  .nav__portfolio-agency {
+    font-family: "Roboto";
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 46px;
+    @include transition;
+    &:hover {
+      color: var(--light-color);
+    }
   }
-  &:focus {
-    color: var(--light-color);
+  .nav__portfolio {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: var(--brand-color);
+    text-decoration: none;
+    display: flex;
+    margin-right: 46px;
+    transition-property: color;
+    @include transition;
+    &:hover {
+      color: var(--light-color);
+    }
   }
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 42px;
-    background: var(--light-color);
-    height: 4px;
-    border-radius: 10px 10px 10px 10px;
-  }
-}
-.nav__portfolio-agency {
-  font-family: "Roboto";
-  color: var(--brand-color);
-  text-decoration: none;
-  font-weight: 500;
-  margin-right: 46px;
-  @include transition;
-  &:hover {
-    color: var(--light-color);
-  }
-}
-.nav__portfolio {
-  font-family: "Roboto";
-  font-weight: 500;
-  color: var(--brand-color);
-  text-decoration: none;
-  display: flex;
-  margin-right: 46px;
-  transition-property: color;
-  @include transition;
-  &:hover {
-    color: var(--light-color);
-  }
-}
-.nav__contact {
-  font-family: "Roboto";
-  color: var(--brand-color);
-  text-decoration: none;
-  font-weight: 500;
-  @include transition;
-  &:hover {
-    color: var(--light-color);
+  .nav__contact {
+    font-family: "Roboto";
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: 500;
+    @include transition;
+    &:hover {
+      color: var(--light-color);
+    }
   }
 }
-*/

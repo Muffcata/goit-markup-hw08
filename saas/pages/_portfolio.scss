@@ -14,11 +14,8 @@
 }
 
 .buttons {
-  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-
   display: flex;
   gap: 8px;
 }
@@ -34,9 +31,9 @@
   border-style: none;
   border-radius: 4px;
   border-style: none;
-  padding: 6px 22px;
-  margin-left: 8px;
+  padding: 6px 13px;
   margin-bottom: 15px;
+
   @include transition;
 
   &:hover {
@@ -143,6 +140,96 @@
   display: flex;
   justify-content: center;
 }
+
+/*TABLET*/
+
+@media screen and (min-width: 768px) {
+  .nav {
+    list-style: none;
+    display: flex;
+    padding-left: 83px;
+    padding-top: 32px;
+    padding-right: 101px;
+  }
+  .nav__portfolio-portfolio {
+    font-family: "Roboto";
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    font-size: 14px;
+    margin-right: 60px;
+    @include transition;
+    position: relative;
+
+    &:hover {
+      color: var(--light-color);
+    }
+    &:active {
+      color: var(--light-color);
+    }
+    &:focus {
+      color: var(--light-color);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 34px;
+      background: var(--light-color);
+      height: 4px;
+      border-radius: 10px 10px 10px 10px;
+    }
+  }
+  .nav__portfolio-agency {
+    font-family: "Roboto";
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 60px;
+    @include transition;
+    &:hover {
+      color: var(--light-color);
+    }
+  }
+  .footer-contacts__mail {
+    color: var(--subtitle-color);
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+  }
+
+  .buttons__item {
+    padding: 6px 40px;
+  }
+  .page-middle__image {
+    width: 354px;
+    height: 440px;
+  }
+  .overlay {
+    width: 354px;
+    height: 294px;
+  }
+  .page-middle {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+  }
+  .overlay__caption {
+    padding-bottom: 57px;
+  }
+}
+
 /*
 .main {
   border-bottom: 1px solid #ececec;

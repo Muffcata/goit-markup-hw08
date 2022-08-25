@@ -86,31 +86,18 @@
   color: #fff;
   text-decoration: none;
 }
-/*
-.page-header .container {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-*/
+
 .menu {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/*
-.header {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  align-content: center;
-  list-style: none;
-}
 
-.page-header {
-  display: flex;
-  align-content: center;
-  margin: 0;
+/*DESKTOP*/
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    margin: 0;
+  }
 }
-*/

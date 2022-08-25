@@ -85,6 +85,22 @@
   color: var(--white-color);
 }
 
+/*DESKTOP*/
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include logo;
+    line-height: 31px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .footer-logo {
+    font-size: 26px;
+    padding-top: 60px;
+    margin: 0;
+  }
+}
+
 /*
 .logo {
   @include logo;
