@@ -10,13 +10,6 @@
   align-content: center;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
-  .page-header {
-    display: flex;
-    align-content: center;
-    margin: 0;
-  }
-}
 
 .menu-toggle {
   min-height: 40px;
@@ -27,16 +20,15 @@
 
   margin: 0;
   padding: 0;
-  background-color: transparent;
+
   cursor: pointer;
   border: none;
-  border-radius: 50%;
+
   outline: none;
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
   color: var(--light-color);
 }
 @media screen and (min-width: 768px) {
@@ -94,6 +86,15 @@
   list-style: none;
 }
 
+/*TABLET*/
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    align-content: center;
+    margin: 0;
+  }
+}
 /*DESKTOP*/
 
 @media screen and (min-width: 1200px) {

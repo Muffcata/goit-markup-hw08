@@ -11,6 +11,9 @@
   display: block;
   justify-content: center;
 }
+.footer__box {
+  display: block;
+}
 
 .middle-footer__header {
   font-weight: 700;
@@ -84,6 +87,9 @@
     display: flex;
     justify-content: center;
   }
+  .footer__box {
+    display: flex;
+  }
 
   .footer-media {
     display: flex;
@@ -122,6 +128,7 @@
 
 @media screen and (min-width: 1200px) {
   .page-footer {
+    display: flex;
     background-color: var(--background-color);
   }
   .footer {
@@ -161,8 +168,6 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: var(--white-color);
-
-      margin-top: 72px;
     }
   }
   .footer-media {

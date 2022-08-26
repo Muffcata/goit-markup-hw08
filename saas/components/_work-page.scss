@@ -14,6 +14,7 @@
 
 @media screen and (min-width: 1200px) {
   .work {
+    display: flex;
     padding-bottom: 94px;
     &__title {
       text-align: center;

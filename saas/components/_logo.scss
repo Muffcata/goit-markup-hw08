@@ -89,6 +89,7 @@
 
 @media screen and (min-width: 1200px) {
   .logo {
+    display: flex;
     @include logo;
     line-height: 31px;
     padding-top: 24px;

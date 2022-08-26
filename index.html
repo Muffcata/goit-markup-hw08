@@ -27,6 +27,7 @@
             <a class="logo" href="index.html"
               ><span>Web</span><span class="logo__color">Studio</span></a
             >
+
             <button
               class="menu-toggle js-open-menu"
               aria-expanded="false"
@@ -46,6 +47,31 @@
                 ></path>
               </svg>
             </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <button class="menu-toggle js-close-menu">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+
+              <ul class="mobile-menu">
+                <li><a href="" class="link">About</a></li>
+                <li><a href="" class="link">Products</a></li>
+                <li><a href="" class="link">Contacts</a></li>
+                <li><a href="" class="link">Career</a></li>
+              </ul>
+            </div>
+
             <!-- <ul class="menu">
           <li><a href="" class="nav__agency">Agencja</a></li>
           <li><a href="" class="nav__portfolio">Porfolio</a></li>
@@ -278,12 +304,14 @@
                   class="team__image-card"
                   src="images/responsive/woman-mobile.jpg"
                   srcset="
+                    images/responsive/woman-mobile.jpg    1x,
                     images/responsive/woman-mobile@2x.jpg 2x,
                     images/responsive/woman-mobile@3x.jpg 3x
                   "
                   alt="Pani w okularach"
                   width="270"
                   height="260"
+                  sizes="(min-width: 480px) 460px, (min-width: 786px) 354px, (min-width: 1200px) 270px"
                 />
                 <figcaption>
                   <p class="name">John Doe</p>
@@ -395,6 +423,7 @@
                   class="team__image-card"
                   src="images/responsive/man-in-black-mobile.jpg"
                   srcset="
+                    images/responsive/man-in-black-mobile.jpg    1x,
                     images/responsive/man-in-black-mobile@2x.jpg 2x,
                     images/responsive/man-in-black-mobile@3x.jpg 3x
                   "
@@ -492,64 +521,65 @@
     <footer>
       <section class="page-footer">
         <div class="container">
-          <div class="footer">
-            <ul class="footer__address">
-              <li>
-                <a class="footer-logo">
-                  <span class="footer-logo__web">Web</span
-                  ><span class="footer-logo__studio">Studio</span>
-                </a>
-              </li>
-
-              <li>
-                <address class="address">
-                  m. Warszawa, Aleje Jerozolimskie 21
-                </address>
-              </li>
-              <ul class="footer-contacts">
-                <li>
-                  <a
-                    class="footer-contacts__link"
-                    href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a class="footer-contacts__link" href="tel: +48 111 111 111"
-                    >+48 111 111 111</a
-                  >
-                </li>
-              </ul>
-            </ul>
-
-            <div class="middle-footer">
-              <p class="middle-footer__header">DOŁĄCZ DO NAS</p>
-
-              <ul class="footer-media">
-                <li class="footer-media__link">
-                  <svg width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </li>
-                <li class="footer-media__link">
-                  <svg width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </li>
-                <li class="footer-media__link">
-                  <svg width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </li>
-                <li class="footer-media__link">
-                  <svg width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-linkedin2"></use>
-                  </svg>
-                </li>
-              </ul>
-            </div>
-          </div>
           <div>
+            <div class="footer__box">
+              <ul class="footer__address">
+                <li>
+                  <a class="footer-logo">
+                    <span class="footer-logo__web">Web</span
+                    ><span class="footer-logo__studio">Studio</span>
+                  </a>
+                </li>
+
+                <li>
+                  <address class="address">
+                    m. Warszawa, Aleje Jerozolimskie 21
+                  </address>
+                </li>
+                <ul class="footer-contacts">
+                  <li>
+                    <a
+                      class="footer-contacts__link"
+                      href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-contacts__link" href="tel: +48 111 111 111"
+                      >+48 111 111 111</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+
+              <div class="middle-footer">
+                <p class="middle-footer__header">DOŁĄCZ DO NAS</p>
+
+                <ul class="footer-media">
+                  <li class="footer-media__link">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </li>
+                  <li class="footer-media__link">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </li>
+                  <li class="footer-media__link">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </li>
+                  <li class="footer-media__link">
+                    <svg width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-linkedin2"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <p class="middle-footer__header">zapisz się do newslettera</p>
             <form class="newsletter">
               <label>
