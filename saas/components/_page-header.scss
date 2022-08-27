@@ -10,7 +10,7 @@
   align-content: center;
   margin: 0;
 }
-
+/*
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -22,7 +22,6 @@
   padding: 0;
 
   cursor: pointer;
-  border: none;
 
   outline: none;
 }
@@ -30,7 +29,7 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
   color: var(--light-color);
-}
+}*/
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -41,6 +40,7 @@
     display: none;
   }
 }
+/*
 .menu-container {
   position: fixed;
   top: 0;

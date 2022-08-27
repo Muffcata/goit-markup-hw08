@@ -47,30 +47,6 @@
                 ></path>
               </svg>
             </button>
-            <div class="menu-container js-menu-container" id="mobile-menu">
-              <button class="menu-toggle js-close-menu">
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-
-              <ul class="mobile-menu">
-                <li><a href="" class="link">About</a></li>
-                <li><a href="" class="link">Products</a></li>
-                <li><a href="" class="link">Contacts</a></li>
-                <li><a href="" class="link">Career</a></li>
-              </ul>
-            </div>
 
             <!-- <ul class="menu">
           <li><a href="" class="nav__agency">Agencja</a></li>
@@ -242,18 +218,20 @@
           <ul class="team__item">
             <li class="team__image">
               <figure>
-                <img
-                  class="team__image-card"
-                  src="images/responsive/img-mobile.jpg"
-                  srcset="
-                    images/responsive/img-mobile.jpg 2x,
-                    images/responsive/img-mobile.jpg 3x
-                  "
-                  alt="Pan w brązowej koszuli"
-                  width="270"
-                  height="260"
-                />
-
+                <picture class="team__image-card">
+                  <source
+                    srcset="
+                      images/responsive/img-mobile.jpg 1x,
+                      images/responsive/img-mobile@2x.jpg 2x,
+                      images/responsive/img-mobile@3x.jpg 3x
+                    "
+                    media="(max-width: 480px)"
+                  />
+                  <img
+                    src="/images/responsive/img-mobile.jpg"
+                    alt="Man in brown shirt"
+                  />
+                </picture>
                 <figcaption>
                   <p class="name">John Doe</p>
                   <p class="name__caption">Product Designer</p>
@@ -300,18 +278,14 @@
             </li>
             <li class="team__image">
               <figure>
-                <img
-                  class="team__image-card"
-                  src="images/responsive/woman-mobile.jpg"
-                  srcset="
-                    images/responsive/woman-mobile.jpg    1x,
-                    images/responsive/woman-mobile@2x.jpg 2x,
+                 <picture class="team__image-card">
+                  <source srcset= "images/responsive/woman-mobile.jpg 1x,
+                    images/responsive/woman-mobile@2x 2x,
                     images/responsive/woman-mobile@3x.jpg 3x
                   "
-                  alt="Pani w okularach"
-                  width="270"
-                  height="260"
-                  sizes="(min-width: 480px) 460px, (min-width: 786px) 354px, (min-width: 1200px) 270px"
+                   media="(max-width: 480px)"/>
+                   <img src="/images/responsive/woman-mobile.jpg"
+                  alt="Woman with glasses"
                 />
                 <figcaption>
                   <p class="name">John Doe</p>
@@ -360,18 +334,16 @@
 
             <li class="team__image">
               <figure>
-                <img
-                  class="team__image-card"
-                  src="images/responsive/man-mobile.jpg"
-                  srcset="
-                    images/responsive/man-mobile@2x.jpg 2x,
+                 <picture class="team__image-card">
+                  <source srcset= "images/responsive/man-mobile.jpg 1x,
+                   images/responsive/man-mobile@2x.jpg 2x,
                     images/responsive/man-mobile@3x.jpg 3x
                   "
-                  alt="Pan w jasnej koszuli"
-                  width="270"
-                  height="260"
+                   media="(max-width: 480px)"/>
+                   <img src="/images/responsive/man-mobile.jpg"
+                  alt="Man in blue shirt"
                 />
-
+                
                 <figcaption>
                   <p class="name">John Doe</p>
 
@@ -419,18 +391,16 @@
             </li>
             <li class="team__image">
               <figure>
-                <img
-                  class="team__image-card"
-                  src="images/responsive/man-in-black-mobile.jpg"
-                  srcset="
-                    images/responsive/man-in-black-mobile.jpg    1x,
-                    images/responsive/man-in-black-mobile@2x.jpg 2x,
+                 <picture class="team__image-card">
+                  <source srcset= "images/responsive/man-in-black-mobile.jpg 1x,
+                   images/responsive/man-in-black-mobile@2x.jpg.jpg 2x,
                     images/responsive/man-in-black-mobile@3x.jpg 3x
                   "
-                  alt="Pan w czarnej koszulce"
-                  width="270"
-                  height="260"
+                   media="(max-width: 480px)"/>
+                   <img src="/images/responsive/man-in-black-mobile.jpg"
+                  alt="Man in black shirt"
                 />
+                
 
                 <figcaption>
                   <p class="name">John Doe</p>
@@ -672,6 +642,56 @@
 
         <button class="close-btn" type="button" data-modal-close>x</button>
       </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-toggle__svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule=""
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul class="mobile-menu__lists">
+        <ul class="mobile-menu">
+          <li><a href="" class="mobile-menu__link">Agencja</a></li>
+          <li>
+            <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li><a href="" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+        <ul class="mobile-menu__contacts-list">
+          <li class="mobile-menu__contacts-elem">
+            <a class="mobile-menu__telephone" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-elem">
+            <a class="mobile-menu__email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+
+          <ul class="mobile-menu__social-list">
+            <li><a class="mobile-menu__social-link" href="">Instagram</a></li>
+            <span class="mobile-menu__social-link-line">|</span>
+            <li><a class="mobile-menu__social-link" href="">Twitter</a></li>
+            <span class="mobile-menu__social-link-line">|</span>
+            <li><a class="mobile-menu__social-link" href="">Facebook</a></li>
+            <span class="mobile-menu__social-link-line">|</span>
+            <li><a class="mobile-menu__social-link" href="">Linkedin</a></li>
+          </ul>
+        </ul>
+      </ul>
     </div>
 
     <script
