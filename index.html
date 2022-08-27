@@ -33,18 +33,8 @@
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
+              <svg width="16" height="12">
+                <use href="/images/symbol-defs.svg#icon-menu"></use>
               </svg>
             </button>
 
@@ -180,30 +170,43 @@
           <div class="work__item">
             <ul class="work__list">
               <li class="work__img">
-                <img
-                  src="images/image.jpg"
-                  alt="Pisanie kodu"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/work/work-1.jpg      1x,
+                      images/work/work-1@2x.jpg2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="/images/work/work-1.jpg" alt="Writting-code" />
+                </picture>
+
                 <p class="work__label">Aplikacje komputerowe</p>
               </li>
               <li class="work__img">
-                <img
-                  src="images/image (2).jpg"
-                  alt="Telefon w monitorze"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/work/work-2.jpg      1x,
+                      images/work/work-2@2x.jpg2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="/images/work/work-2.jpg" alt="Laptop&mobile" />
+                </picture>
                 <p class="work__label">Aplikacje mobilne</p>
               </li>
               <li class="work__img">
-                <img
-                  src="images/image (3).jpg"
-                  alt="Paleta kolorów"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/work/work-3.jpg      1x,
+                      images/work/work-3@2x.jpg2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="/images/work/work-3.jpg" alt="Tablet" />
+                </picture>
                 <p class="work__label">Rozwiązania graficzne</p>
               </li>
             </ul>
