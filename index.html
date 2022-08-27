@@ -218,17 +218,35 @@
           <ul class="team__item">
             <li class="team__image">
               <figure>
-                <picture class="team__image-card">
+                <picture>
                   <source
                     srcset="
-                      images/responsive/img-mobile.jpg 1x,
+                      images/responsive/img-mobile.jpg    1x,
                       images/responsive/img-mobile@2x.jpg 2x,
                       images/responsive/img-mobile@3x.jpg 3x
                     "
-                    media="(max-width: 480px)"
+                    media="(max-width: 767px)"
+                  />
+
+                  <source
+                    srcset="
+                      images/responsive/brown-tablet.jpg    1x,
+                      images/responsive/brown-tablet@2x.jpg 2x,
+                      images/responsive/brown-tablet@3x.jpg 3x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+
+                  <source
+                    srcset="
+                      images/responsive/brown-desktop.jpg    1x,
+                      images/responsive/brown-desktop@2x.jpg 2x,
+                      images/responsive/brown-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
                   />
                   <img
-                    src="/images/responsive/img-mobile.jpg"
+                    src="/images/responsive/brown-desktop.jpg"
                     alt="Man in brown shirt"
                   />
                 </picture>
@@ -278,15 +296,32 @@
             </li>
             <li class="team__image">
               <figure>
-                 <picture class="team__image-card">
-                  <source srcset= "images/responsive/woman-mobile.jpg 1x,
-                    images/responsive/woman-mobile@2x 2x,
-                    images/responsive/woman-mobile@3x.jpg 3x
-                  "
-                   media="(max-width: 480px)"/>
-                   <img src="/images/responsive/woman-mobile.jpg"
-                  alt="Woman with glasses"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/responsive/woman-mobile.jpg    1x,
+                      images/responsive/woman-mobile@2x     2x,
+                      images/responsive/woman-mobile@3x.jpg 3x
+                    "
+                    media="(max-width: 767px)" />
+                  <source
+                    srcset="
+                      images/responsive/woman-tablet.jpg    1x,
+                      images/responsive/woman-tablet@2x.jpg 2x,
+                      images/responsive/woman-tablet@3x.jpg 3x
+                    "
+                    media="(max-width: 1199px)" />
+                  <source
+                    srcset="
+                      images/responsive/woman-desktop.jpg    1x,
+                      images/responsive/woman-desktop@2x.jpg 2x,
+                      images/responsive/woman-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)" />
+                  <img
+                    src="/images/responsive/woman-desktop.jpg"
+                    alt="Woman with glasses"
+                /></picture>
                 <figcaption>
                   <p class="name">John Doe</p>
                   <p class="name__caption">Frontend Developer</p>
@@ -334,16 +369,36 @@
 
             <li class="team__image">
               <figure>
-                 <picture class="team__image-card">
-                  <source srcset= "images/responsive/man-mobile.jpg 1x,
-                   images/responsive/man-mobile@2x.jpg 2x,
-                    images/responsive/man-mobile@3x.jpg 3x
-                  "
-                   media="(max-width: 480px)"/>
-                   <img src="/images/responsive/man-mobile.jpg"
-                  alt="Man in blue shirt"
-                />
-                
+                <picture>
+                  <source
+                    srcset="
+                      images/responsive/man-mobile.jpg    1x,
+                      images/responsive/man-mobile@2x.jpg 2x,
+                      images/responsive/man-mobile@3x.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images/responsive/blue-shirt.jpg    1x,
+                      images/responsive/blue-shirt@2x.jpg 2x,
+                      images/responsive/blue-shirt@3x.jpg 3x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      images/responsive/blue-shirt-desktop.jpg    1x,
+                      images/responsive/blue-shirt-desktop@2x.jpg 2x,
+                      images/responsive/blue-shirt-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="/images/responsive/blue-shirt-desktop.jpg"
+                    alt="Man in blue shirt"
+                  />
+                </picture>
                 <figcaption>
                   <p class="name">John Doe</p>
 
@@ -391,16 +446,36 @@
             </li>
             <li class="team__image">
               <figure>
-                 <picture class="team__image-card">
-                  <source srcset= "images/responsive/man-in-black-mobile.jpg 1x,
-                   images/responsive/man-in-black-mobile@2x.jpg.jpg 2x,
-                    images/responsive/man-in-black-mobile@3x.jpg 3x
-                  "
-                   media="(max-width: 480px)"/>
-                   <img src="/images/responsive/man-in-black-mobile.jpg"
-                  alt="Man in black shirt"
-                />
-                
+                <picture>
+                  <source
+                    srcset="
+                      images/responsive/man-in-black-mobile.jpg    1x,
+                      images/responsive/man-in-black-mobile@2x.jpg 2x,
+                      images/responsive/man-inblack-mobile@3x.jpg  3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images/responsive/black-shirt.jpg    1x,
+                      images/responsive/black-shirt@2x.jpg 2x,
+                      images/responsive/black-shirt@3x.jpg 3x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      images/responsive/black-shirt-desktop.jpg    1x,
+                      images/responsive/black-shirt-desktop@2x.jpg 2x,
+                      images/responsive/black-shirt-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="/images/responsive/black-shirt-desktop.jpg"
+                    alt="Man in black shirt"
+                  />
+                </picture>
 
                 <figcaption>
                   <p class="name">John Doe</p>

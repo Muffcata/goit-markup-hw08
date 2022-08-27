@@ -8,7 +8,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: block;
-
   display: flex;
   justify-content: center;
   background-color: var(--background-color-button);
@@ -95,7 +94,7 @@ figure {
 
 /*TABLET*/
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -115,6 +114,8 @@ figure {
     &__item {
       gap: 30px;
       margin: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
   .team__image {
