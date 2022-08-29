@@ -229,7 +229,6 @@ ul {
   font-size: 24px;
   padding-top: 60px;
   margin: 0;
-  justify-content: center;
 }
 
 .footer-logo__web {
@@ -1244,7 +1243,7 @@ figure {
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .clients {
     justify-content: center;
     padding-top: 47px;
