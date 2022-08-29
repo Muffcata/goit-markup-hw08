@@ -28,42 +28,35 @@ body {
 ul {
   list-style: none;
 }
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .containter {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+.containter {
+  margin: 0 auto;
+  padding: 0 15px;
+  align-content: center;
+  display: flex;
+}
+.section {
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .containter {
     max-width: 480px;
-    margin: 0 auto;
     padding: 0 15px;
-    align-content: center;
-  }
-  .section {
-    padding-top: 60px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 15px;
-    margin: 0 auto;
-  }
-  .section {
-    padding-top: 60px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     padding: 0 15px;
-    margin: 0 auto;
+    align-content: center;
   }
   .section {
     padding-bottom: 94px;
