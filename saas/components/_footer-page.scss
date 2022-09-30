@@ -25,7 +25,6 @@
   padding-top: 60px;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
 }
 .address {
   color: var(--white-color);
@@ -48,6 +47,7 @@
     font-size: 14px;
     display: flex;
     justify-content: center;
+    padding-top: 8px;
   }
 }
 .footer-media {
@@ -89,6 +89,7 @@
   }
   .footer__box {
     display: flex;
+    justify-content: center;
   }
 
   .footer-media {
@@ -127,6 +128,9 @@
 /*DESKTOP*/
 
 @media screen and (min-width: 1200px) {
+  .footer__box {
+    display: flex;
+  }
   .page-footer {
     display: flex;
     background-color: var(--background-color);
@@ -135,7 +139,6 @@
     display: flex;
 
     &__address {
-      padding-right: 84px;
     }
   }
   .address {
@@ -160,7 +163,7 @@
     }
   }
   .middle-footer {
-    padding-right: 85px;
+    margin-left: 78px;
     &__header {
       font-weight: 700;
       font-size: 14px;

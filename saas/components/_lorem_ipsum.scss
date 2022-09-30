@@ -1,6 +1,5 @@
 .card {
   justify-content: center;
-
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -13,6 +12,9 @@
   letter-spacing: 0.03em;
   flex-grow: 1;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
 }
 .card__icon {
   width: 450px;

@@ -30,10 +30,13 @@ ul {
 }
 
 @media screen and (min-width: 480px) {
-  .containter {
+  .container {
     max-width: 767px;
     padding: 0 15px;
     margin: auto;
+  }
+  .section {
+    padding-bottom: 60px;
   }
 }
 
@@ -47,9 +50,10 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .container {
+    max-width: 1200px;
     padding: 0 15px;
     align-content: center;
-    margin: 0 auto;
+    margin: auto;
   }
   .section {
     padding-bottom: 94px;
