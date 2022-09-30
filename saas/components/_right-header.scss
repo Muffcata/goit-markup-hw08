@@ -56,7 +56,7 @@
 }
 /*DESKTOP*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .social {
     display: flex;
     padding-left: 242px;
