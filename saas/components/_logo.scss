@@ -25,6 +25,7 @@
   font-size: 24px;
   padding-top: 60px;
   margin: 0;
+  justify-content: center;
 }
 .footer-logo__web {
   @include logo;
@@ -47,7 +48,6 @@
     }
   }
 }
-
 /*DESKTOP*/
 
 @media screen and (min-width: 1200px) {
@@ -65,23 +65,18 @@
       color: var(--brand-color);
     }
   }
-}
-.footer-logo {
-  display: flex;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  padding-top: 60px;
-  margin: 0;
-  justify-content: center;
-}
-.footer-logo__web {
-  @include logo;
-}
+  .footer-logo {
+    justify-content: left;
+  }
 
-.footer-logo__studio {
-  @include logo;
-  color: var(--white-color);
+  .footer-logo__web {
+    @include logo;
+  }
+
+  .footer-logo__studio {
+    @include logo;
+    color: var(--white-color);
+  }
 }
 
 /*

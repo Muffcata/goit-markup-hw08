@@ -40,7 +40,6 @@
   .newsletter__email {
     display: flex;
     justify-content: center;
-    margin-left: 166px;
   }
 }
 
@@ -72,5 +71,11 @@
     border-style: none;
     padding-top: 10px;
     line-height: 30px;
+    margin-top: 0px;
+  }
+  .newsletter__email {
+    display: flex;
+    justify-content: center;
+    margin-left: 78px;
   }
 }

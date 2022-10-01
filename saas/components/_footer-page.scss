@@ -14,7 +14,10 @@
 .footer__box {
   display: block;
 }
-
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
 .middle-footer__header {
   font-weight: 700;
   font-size: 14px;
@@ -91,7 +94,10 @@
     display: flex;
     justify-content: center;
   }
-
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+  }
   .footer-media {
     display: flex;
     justify-content: center;
@@ -125,11 +131,16 @@
     margin-right: 165px;
   }
 }
+
 /*DESKTOP*/
 
 @media screen and (min-width: 1200px) {
   .footer__box {
     display: flex;
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: row;
   }
   .page-footer {
     display: flex;
@@ -139,6 +150,7 @@
     display: flex;
 
     &__address {
+      margin-right: 70px;
     }
   }
   .address {
@@ -160,45 +172,10 @@
       text-decoration: none;
       font-weight: 500;
       font-size: 14px;
+      justify-content: left;
     }
   }
-  .middle-footer {
-    margin-left: 78px;
-    &__header {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--white-color);
-    }
-  }
-  .footer-media {
-    display: flex;
-    gap: 10px;
-    fill: var(--white-color);
-    padding-bottom: 100px;
-    &__link {
-      width: 40px;
-      height: 40px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      border-radius: 50%;
-      background-color: var(--background-social);
-      cursor: pointer;
-      @include transition;
-      &:hover {
-        fill: var(--white-color);
-        background-color: var(--light-color);
-        cursor: pointer;
-      }
-    }
-    &__link:focus {
-      fill: var(--white-color);
-      background-color: var(--light-color);
-      cursor: pointer;
-    }
+  .middle-footer__header {
+    margin-left: -80px;
   }
 }
