@@ -27,11 +27,13 @@
             <a class="logo" href="index.html"
               ><span>Web</span><span class="logo__color">Studio</span></a
             >
-            <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
+
+            <div class="js-menu-container is-open">
+              <button type="button" class="js-close-menu">x</button>
+
+              <div class="aria-expanded"></div>
+            </div>
+            <button class="js-open-menu">
               <svg
                 width="24"
                 height="24"
@@ -790,14 +792,13 @@
         <button class="close-btn" type="button" data-modal-close>x</button>
       </div>
     </div>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script src="./saas/mobilne-menu.js"></script>
+    <script defer src="./saas/mobilne-menu.js"></script>
     <script src="./css/js/modal.js"></script>
   </body>
 </html>
