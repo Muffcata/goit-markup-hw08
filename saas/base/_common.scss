@@ -29,9 +29,8 @@ ul {
   list-style: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-wdth: 767px) {
   .container {
-    max-width: 767px;
     padding: 0 15px;
     margin: auto;
   }

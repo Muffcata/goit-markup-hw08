@@ -144,13 +144,6 @@
 /*TABLET*/
 
 @media screen and (min-width: 768px) {
-  .nav {
-    list-style: none;
-    display: flex;
-    padding-left: 83px;
-    padding-top: 32px;
-    padding-right: 101px;
-  }
   .nav__portfolio-portfolio {
     font-family: "Roboto";
     color: var(--light-color);

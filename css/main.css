@@ -31,9 +31,8 @@ ul {
   list-style: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-wdth: 767px) {
   .container {
-    max-width: 767px;
     padding: 0 15px;
     margin: auto;
   }
@@ -261,7 +260,6 @@ ul {
   .nav {
     list-style: none;
     display: flex;
-    padding-left: 83px;
     padding-top: 32px;
     padding-right: 101px;
   }
@@ -335,7 +333,6 @@ ul {
     display: flex;
     padding-left: 93px;
     padding-top: 32px;
-    padding-right: 353px;
     align-content: center;
   }
   .nav__agency {
@@ -442,7 +439,7 @@ ul {
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .social {
     display: block;
   }
@@ -853,6 +850,7 @@ ul {
   display: flex;
   justify-content: center;
   background-color: var(--background-color-button);
+  margin-top: 100px;
 }
 .team__header {
   text-align: center;
@@ -2062,13 +2060,6 @@ input {
 
 /*TABLET*/
 @media screen and (min-width: 768px) {
-  .nav {
-    list-style: none;
-    display: flex;
-    padding-left: 83px;
-    padding-top: 32px;
-    padding-right: 101px;
-  }
   .nav__portfolio-portfolio {
     font-family: "Roboto";
     color: var(--light-color);
