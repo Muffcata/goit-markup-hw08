@@ -580,16 +580,16 @@ ul {
   cursor: pointer;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .central-box {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/responsive/Header-mobile@2x.jpg");
+    background-image: url("../images/responsive/Header-mobile@2x.jpg");
   }
 }
 /*TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .central-box {
     max-width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/responsive/Header-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/responsive/Header-tablet.jpg");
     text-align: center;
     margin: 0 auto;
     background-size: 100%;
@@ -599,15 +599,14 @@ ul {
     opacity: 1;
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   .central-box {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/responsive/Header-tablet@2x.jpg");
+    background-image: url("/images/responsive/Header-tablet@2x.jpg");
   }
 }
 /*DESKTOP*/
 @media screen and (min-width: 1200px) {
   .central-box {
-    max-width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/responsive/Header-desktop.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -623,9 +622,9 @@ ul {
     opacity: 1;
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   .central-box {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/responsive/Header-desktop@2x.jpg");
+    background-image: url("../images/responsive/Header-desktop@2x.jpg");
   }
 }
 /*
