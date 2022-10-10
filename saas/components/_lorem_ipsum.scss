@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  display: flex;
 }
 .card__title {
   font-weight: 700;
@@ -38,8 +39,7 @@
   text-align: left;
 }
 .card__img {
-  margin-top: 25px;
-  margin-left: 190px;
+  margin: auto;
 }
 
 /*TABLET*/

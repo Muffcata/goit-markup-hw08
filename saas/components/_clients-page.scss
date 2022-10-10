@@ -28,8 +28,8 @@
   border-radius: 4px;
   align-content: flex-start;
   fill: var(--clients);
+  display: flex;
 
-  margin-bottom: 30px;
   @include transition;
   &:hover {
     fill: var(--light-color);
@@ -43,8 +43,7 @@
   }
 }
 .clients__img-img {
-  margin-left: 83px;
-  margin-top: 21px;
+  margin: auto;
 }
 /*TABLET*/
 
@@ -60,6 +59,7 @@
   }
   .clients__img {
     width: 210px;
+    margin-bottom: 30px;
   }
 }
 

@@ -5,12 +5,13 @@
 }
 
 .central-box {
+  background-size: 100%;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/responsive/Header-mobile.jpg");
-
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 
@@ -25,6 +26,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/responsive/Header-mobile@2x.jpg");
+    background-size: 100%;
   }
 }
 .central-box__title {
@@ -33,8 +35,10 @@
   font-size: 26px;
   line-height: 1.61;
   text-transform: uppercase;
-  padding-top: 118px;
+  padding-top: 56px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 .button {
   font-family: "Roboto";
@@ -82,12 +86,15 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/responsive/Header-tablet@2x.jpg");
+        url("../images/responsive/Header-tablet@2x.jpg");
     }
   }
 
   .button {
     opacity: 1;
+  }
+  .central-box__title {
+    padding-top: 118px;
   }
 }
 

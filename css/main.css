@@ -536,7 +536,9 @@ ul {
   }
 }
 .central-box {
+  background-size: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/responsive/Header-mobile.jpg");
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -545,6 +547,7 @@ ul {
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .central-box {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/responsive/Header-mobile@2x.jpg");
+    background-size: 100%;
   }
 }
 .central-box__title {
@@ -553,8 +556,10 @@ ul {
   font-size: 26px;
   line-height: 1.61;
   text-transform: uppercase;
-  padding-top: 118px;
+  padding-top: 56px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -596,12 +601,17 @@ ul {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .central-box {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/responsive/Header-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/responsive/Header-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .button {
     opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .central-box__title {
+    padding-top: 118px;
   }
 }
 /*DESKTOP*/
@@ -695,6 +705,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  display: flex;
 }
 
 .card__title {
@@ -713,8 +724,7 @@ ul {
 }
 
 .card__img {
-  margin-top: 25px;
-  margin-left: 190px;
+  margin: auto;
 }
 
 /*TABLET*/
@@ -865,12 +875,16 @@ ul {
   margin: 0;
 }
 
-.team__image {
+.team__image-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-top: 47px;
   background-color: var(--white-color);
   flex-grow: 1;
+}
+
+.team__images {
+  width: 100%;
 }
 
 .name {
@@ -961,7 +975,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
   }
-  .team__image {
+  .team__image-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-top: 47px;
@@ -1049,7 +1063,7 @@ figure {
     margin: 0;
     padding: 0;
   }
-  .team__image {
+  .team__image-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-top: 47px;
@@ -1145,7 +1159,7 @@ figure {
   border-radius: 4px;
   align-content: flex-start;
   fill: var(--clients);
-  margin-bottom: 30px;
+  display: flex;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1162,8 +1176,7 @@ figure {
 }
 
 .clients__img-img {
-  margin-left: 83px;
-  margin-top: 21px;
+  margin: auto;
 }
 
 /*TABLET*/
@@ -1179,6 +1192,7 @@ figure {
   }
   .clients__img {
     width: 210px;
+    margin-bottom: 30px;
   }
 }
 /*DESKTOP*/
@@ -1242,6 +1256,7 @@ figure {
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding-right: 40px;
 }
 .modal__title {
   font-weight: 700;
@@ -1454,6 +1469,12 @@ input {
   pointer-events: none;
 }
 
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .backdrop {
